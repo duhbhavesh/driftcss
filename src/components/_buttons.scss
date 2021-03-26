@@ -1,0 +1,109 @@
+// Buttons
+
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-top: $unit-5;
+
+	&-floats {
+		margin-top: $unit-16;
+		position: relative;
+	}
+}
+
+.btn {
+	cursor: pointer;
+	color: $dark-color;
+	background-color: $gray-color-light;
+	border-radius: $border-radius;
+	border: 1px solid $border-color-dark;
+	text-align: center;
+	margin: $unit-1;
+	padding: $unit-2 $unit-5;
+	transition: all 150ms ease-in;
+	outline: none;
+
+	&-primary {
+		color: $light-color;
+		background-color: $primary-color;
+	}
+
+	&-secondary {
+		color: $dark-color;
+		background-color: $secondary-color-light;
+	}
+
+	&-error {
+		color: $light-color;
+		background-color: $error-color;
+	}
+
+	&-link {
+		display: inline-block;
+		color: $link-color;
+		&:focus {
+			border: 1px solid $link-color;
+		}
+
+		&:hover,
+		&:active,
+		&:focus {
+			text-decoration: none;
+		}
+	}
+
+	// Button Pills
+	&-pill {
+		border-radius: $unit-5;
+		padding: $unit-2 $unit-6;
+	}
+
+	// Button icons
+	&-square {
+		width: $unit-10;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	&-circle {
+		width: $unit-9;
+		border-radius: 50%;
+	}
+
+	&-top-right {
+		position: absolute;
+		top: 0;
+		right: 0;
+		opacity: 0.8;
+
+		&:hover {
+			opacity: 1;
+			color: $error-color;
+		}
+	}
+
+	// Button floats
+
+	&-fab {
+		font-size: 1.2rem;
+		width: 2.5rem;
+		padding: 0.5rem;
+		position: absolute;
+		right: $unit-2;
+		bottom: $unit-1;
+		transition: all 100ms ease-in;
+		box-shadow: 0 $unit-1 $unit-1 0 $gray-color-dark;
+
+		&-arrow {
+			position: fixed;
+			z-index: 100;
+			right: $unit-5;
+			bottom: $unit-8;
+		}
+	}
+}
+
+#btn-link {
+	color: $light-color;
+}

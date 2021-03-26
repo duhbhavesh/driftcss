@@ -1,0 +1,12 @@
+.ratings {
+	margin-top: $unit-4;
+}
+
+.rating {
+	font-size: $unit-3;
+	color: $dark-color;
+
+	.fa-star {
+		color: $primary-color-light;
+	}
+}

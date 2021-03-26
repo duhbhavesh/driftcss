@@ -1,0 +1,171 @@
+.sidebar {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-height: 275px;
+  border: none;
+  z-index: 1;
+  border-color: #f1f2f6;
+}
+
+.docs-nav-title {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  text-align: center;
+}
+
+.components {
+  display: flex;
+  flex-direction: row;
+  padding: 0.8rem;
+  line-height: 2.1;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+
+.component {
+  border: 1px solid #f1f2f6;
+  padding-left: 0.4rem;
+  padding-bottom: 0.4rem;
+  width: 30%;
+  margin: 0 auto;
+}
+.component:hover {
+  background-color: #f6f7f9;
+  transition: 250ms ease-in;
+}
+.component-title {
+  font-size: 1.2rem;
+  color: #4a526b;
+  margin-bottom: 0.8rem;
+}
+.component-details {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.component-heading {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.nav-link {
+  color: #1840bd;
+}
+
+.docs-content {
+  position: relative;
+  margin-left: 0;
+  margin-top: 280px;
+  padding: 1.2rem;
+}
+
+.docs-title {
+  font-size: 1.4rem;
+  color: #1c4bdc;
+}
+
+.docs-para {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.docs-heading {
+  margin-top: 2rem;
+  font-size: 1rem;
+}
+
+.section-doc {
+  margin-top: 2.4rem;
+  padding: 1rem;
+  border: 1px solid;
+  border-radius: 0.2rem;
+  border-color: #d3d7e1;
+}
+
+#code {
+  background-color: #f6f7f9;
+  margin-top: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.note {
+  background-color: rgba(253, 255, 121, 0.4);
+  border-left-color: #ffe564;
+  border-left-width: 0.4rem;
+  border-left-style: solid;
+  padding: 1rem;
+  margin-bottom: 1.6rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 960px) {
+  .sidebar {
+    position: fixed;
+    left: 30px;
+    width: 230px;
+    max-height: 70vh;
+  }
+
+  .docs-nav-title {
+    text-align: left;
+  }
+
+  .docs-nav-link {
+    color: #2553e3;
+    outline: none;
+    text-decoration: none;
+  }
+  .docs-nav-link:focus, .docs-nav-link:hover, .docs-nav-link:active, .docs-nav-link.active {
+    color: #2553e3;
+    text-decoration: underline;
+  }
+
+  .components {
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+
+  .components > div {
+    margin: 0;
+    width: 70%;
+  }
+
+  .docs-content {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 250px;
+    width: 75%;
+  }
+}
+@media (min-width: 1280px) {
+  .sidebar {
+    position: fixed;
+    min-width: 250px;
+    left: 80px;
+    width: 200px;
+  }
+
+  .docs-nav-title {
+    text-align: left;
+  }
+
+  .components {
+    flex-direction: column;
+    padding-left: 1rem;
+  }
+
+  .components > div {
+    margin: 0;
+    width: 70%;
+  }
+
+  .docs-content {
+    position: absolute;
+    margin-top: 0;
+    margin-left: 350px;
+    width: 55%;
+  }
+}
+
+/*# sourceMappingURL=docs.css.map */

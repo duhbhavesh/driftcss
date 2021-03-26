@@ -1,0 +1,34 @@
+.navbars {
+	margin-top: $unit-4;
+}
+
+.navbar {
+	text-align: center;
+
+	&-brand {
+		margin-left: $unit-3;
+	}
+
+	.nav-item:not(:last-of-type) {
+		margin-right: $unit-3;
+	}
+
+	&-link {
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+}
+
+@media (min-width: $size-lg) {
+	.navbar {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border-radius: $border-radius;
+		justify-content: space-between;
+		padding: $unit-1;
+		margin: $unit-2;
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+			rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+	}
+}
