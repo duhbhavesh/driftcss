@@ -1,53 +1,53 @@
 .input {
-	&-group {
-		display: flex;
-		flex-direction: column;
-		margin-top: $unit-4;
-	}
-	&-label {
-		font-size: $font-size-sm;
-		margin-bottom: $unit-1;
-	}
-	&-box {
-		padding: $unit-2;
-		border: 1px solid $border-color-dark;
-		border-radius: $border-radius;
-		width: 100%;
-		transition: background 0.2s, border 0.2s, box-shadow 0.2s;
+    &-group {
+        display: flex;
+        flex-direction: column;
+        margin-top: $unit-4;
+    }
+    &-label {
+        font-size: $font-size-sm;
+        margin-bottom: $unit-1;
+    }
+    &-box {
+        padding: $unit-2;
+        border: 1px solid $border-color-dark;
+        border-radius: $border-radius;
+        width: 100%;
+        transition: background 0.2s, border 0.2s, box-shadow 0.2s;
 
-		&:focus {
-			border-color: $primary-color;
-			outline: none;
-		}
-	}
-	&-radio > .input-icon:checked {
-		border-color: red;
-		background-color: red;
-	}
-	.is-success {
-		border-color: $success-color;
-		background-color: $bg-color-success;
-	}
-	.is-error {
-		border-color: $error-color;
-		background-color: $bg-color-error;
-	}
+        &:focus {
+            border-color: $primary-color;
+            outline: none;
+        }
+    }
+    &-radio > .input-icon:checked {
+        border-color: red;
+        background-color: red;
+    }
+    .is-success {
+        border-color: $success-color;
+        background-color: $bg-color-success;
+    }
+    .is-error {
+        border-color: $error-color;
+        background-color: $bg-color-error;
+    }
 
-	.input-hint {
-		font-size: $font-size-sm;
-		margin-top: $unit-1;
+    .input-hint {
+        font-size: $font-size-sm;
+        margin-top: $unit-1;
 
-		&-success {
-			color: $success-color;
-		}
-		&-error {
-			color: $error-color;
-		}
-	}
+        &-success {
+            color: $success-color;
+        }
+        &-error {
+            color: $error-color;
+        }
+    }
 }
 
 @media (min-width: $size-sm) {
-	.input-box {
-		width: 60%;
-	}
+    .input-box {
+        width: 60%;
+    }
 }

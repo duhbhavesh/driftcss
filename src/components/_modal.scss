@@ -1,51 +1,51 @@
 .modals {
-	position: relative;
-	margin-top: $unit-4;
+    position: relative;
+    margin-top: $unit-4;
 }
 
 .modal {
-	position: relative;
-	border-radius: $border-radius;
-	margin-top: $unit-4;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    position: relative;
+    border-radius: $border-radius;
+    margin-top: $unit-4;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
-	&-title {
-		font-size: $font-size-lg;
-		color: $dark-color;
-		margin-top: $unit-4;
-	}
+    &-title {
+        font-size: $font-size-lg;
+        color: $dark-color;
+        margin-top: $unit-4;
+    }
 
-	&-para {
-		margin-top: $unit-4;
-		margin-bottom: $unit-4;
-	}
+    &-para {
+        margin-top: $unit-4;
+        margin-bottom: $unit-4;
+    }
 }
 
 #modal {
-	display: none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: $unit-4;
-	border-radius: $border-radius;
-	background-color: white;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: $unit-4;
+    border-radius: $border-radius;
+    background-color: white;
 }
 
 #modal-overlay {
-	display: none;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: rgba(20, 20, 20, 0.2);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(20, 20, 20, 0.2);
 }
 
 #modal.open {
-	display: block;
+    display: block;
 }
 #modal-overlay.open {
-	display: block;
+    display: block;
 }

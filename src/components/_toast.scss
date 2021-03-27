@@ -1,76 +1,76 @@
 .toasts {
-	margin-top: $unit-4;
+    margin-top: $unit-4;
 }
 
 .toast {
-	display: flex;
-	justify-content: space-between;
-	border: 1px solid;
-	width: auto;
-	align-items: center;
-	padding: $unit-3;
-	margin-bottom: $unit-4;
-	color: $light-color;
-	font-weight: 600;
-	border-radius: $border-radius;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-		rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid;
+    width: auto;
+    align-items: center;
+    padding: $unit-3;
+    margin-bottom: $unit-4;
+    color: $light-color;
+    font-weight: 600;
+    border-radius: $border-radius;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 
-	&-details {
-		display: flex;
-	}
+    &-details {
+        display: flex;
+    }
 
-	&-icon,
-	&-msg {
-		margin-right: $unit-2;
-	}
-	&-info {
-		background-color: $primary-color;
-		border-color: $primary-color-light;
-	}
-	&-success {
-		background-color: $success-color;
-		border-color: $success-color;
-	}
-	&-error {
-		background-color: $error-color;
-		border-color: $error-color;
-	}
-	&-warning {
-		background-color: $warning-color;
-		border-color: $warning-color;
-	}
+    &-icon,
+    &-msg {
+        margin-right: $unit-2;
+    }
+    &-info {
+        background-color: $primary-color;
+        border-color: $primary-color-light;
+    }
+    &-success {
+        background-color: $success-color;
+        border-color: $success-color;
+    }
+    &-error {
+        background-color: $error-color;
+        border-color: $error-color;
+    }
+    &-warning {
+        background-color: $warning-color;
+        border-color: $warning-color;
+    }
 
-	.fa-times {
-		cursor: pointer;
-	}
+    .fa-times {
+        cursor: pointer;
+    }
 }
 
 #toast-demo-open {
-	margin-bottom: $unit-6;
+    margin-bottom: $unit-6;
 }
 
 #toast-demo {
-	display: none;
-	position: fixed;
-	bottom: $unit-6;
-	align-items: center;
-	justify-content: center;
+    display: none;
+    position: fixed;
+    bottom: $unit-6;
+    align-items: center;
+    justify-content: center;
 }
 
 #toast-demo.open {
-	display: flex;
+    display: flex;
 }
 
 @media (min-width: $size-sm) {
-	.toast {
-		width: 50%;
-	}
+    .toast {
+        width: 50%;
+    }
 
-	#toast-demo {
-		width: auto;
-		left: 50%;
-		right: auto;
-		transform: translateX(-50%);
-	}
+    #toast-demo {
+        width: auto;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
 }
