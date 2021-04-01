@@ -1,0 +1,39 @@
+.images {
+    margin-top: $unit-8;
+}
+
+.img-responsive {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.images-round-thumbnail {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    & > img {
+        margin-top: $unit-10;
+    }
+}
+
+.img-rounded {
+    border-radius: 50%;
+}
+
+.img-thumbnail {
+    border-radius: $border-radius;
+    border: $unit-3 solid $gray-color;
+}
+
+@media (min-width: $size-sm) {
+    .images-round-thumbnail {
+        flex-direction: row;
+        width: 50%;
+
+        & > img {
+            margin-right: $unit-2;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+.alert {
+    margin-top: $unit-5;
+    padding: $unit-2;
+    border: 1px solid;
+    border-radius: $border-radius;
+    border-color: $border-color-dark;
+    color: $light-color;
+
+    &-default {
+        color: $dark-color;
+    }
+
+    &-primary {
+        background-color: $primary-color;
+        border-color: $primary-color-light;
+    }
+
+    &-success {
+        background-color: $success-color;
+    }
+
+    &-warning {
+        background-color: $warning-color;
+    }
+
+    &-error {
+        background-color: $error-color;
+    }
+}
