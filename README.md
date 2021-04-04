@@ -14,6 +14,8 @@ Include drift.css located in /dist in your website or Web app.
 <link rel="stylesheet" href="drift.min.css">
 ```
 
+---
+
 ### Install via CDN
 
 Use the following CDN link to include driftcss in your project.
