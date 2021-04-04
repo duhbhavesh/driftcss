@@ -1,227 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Driftcss | Documentation</title>
-        <link rel="stylesheet" href="/css/drift.css" />
-        <link rel="stylesheet" href="/css/index.css" />
-        <link rel="stylesheet" href="/css/docs.css" />
-        <link rel="stylesheet" href="/prism.css" />
-        <script defer src="/prism.js"></script>
-        <script
-            defer
-            src="https://kit.fontawesome.com/05f7314c5e.js"
-            crossorigin="anonymous"
-        ></script>
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <nav class="row nav">
-                    <div class="nav-left">
-                        <ul class="nav-links">
-                            <li class="nav-link"><a href="/">Driftcss</a></li>
-                            <li class="nav-link">
-                                <a href="/docs/documentation.html">Docs</a>
-                            </li>
-                            <li class="nav-link">
-                                <a href="/docs/documentation.html">Download</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="nav-right">
-                        <form action="/" id="docsearch">
-                            <input
-                                id="docsearch-input"
-                                placeholder="Seach Docs..."
-                                type="search"
-                            />
-                        </form>
-                        <ul class="nav-links social-icons hide">
-                            <li class="nav-link">
-                                <a href="https://github.com/duhbhavesh/driftcss"
-                                    ><img
-                                        class="social-icon"
-                                        src="/docs/img/homepage/github.svg"
-                                        alt="Github"
-                                /></a>
-                            </li>
-                            <li class="nav-link">
-                                <a href="https://twitter.com"
-                                    ><img
-                                        class="social-icon"
-                                        src="/docs/img/homepage/twitter.svg"
-                                        alt="Twitter"
-                                /></a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <button
-                    onclick="scrollToTop()"
-                    class="btn btn-square btn-primary btn-circle btn-fab btn-fab-arrow"
-                >
-                    <i class="fas fa-angle-double-up"></i>
-                </button>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Driftcss | Documentation</title>
+      <link rel="stylesheet" href="/css/drift.css" />
+      <link rel="stylesheet" href="/css/index.css" />
+      <link rel="stylesheet" href="/css/docs.css" />
+      <link rel="stylesheet" href="/prism.css" />
+      <script defer src="/prism.js"></script>
+      <script
+         defer
+         src="https://kit.fontawesome.com/05f7314c5e.js"
+         crossorigin="anonymous"
+      ></script>
+   </head>
+   <body>
+      <header>
+         <div class="container">
+            <nav class="row nav">
+               <div class="nav-left">
+                  <ul class="nav-links">
+                     <li class="nav-link"><a href="/">Driftcss</a></li>
+                     <li class="nav-link">
+                        <a href="/docs/documentation.html">Docs</a>
+                     </li>
+                     <li class="nav-link">
+                        <a href="/docs/documentation.html">Download</a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="nav-right">
+                  <form action="/" id="docsearch">
+                     <input
+                        id="docsearch-input"
+                        placeholder="Seach Docs..."
+                        type="search"
+                     />
+                  </form>
+                  <ul class="nav-links social-icons hide">
+                     <li class="nav-link">
+                        <a href="https://github.com/duhbhavesh/driftcss"
+                           ><img
+                              class="social-icon"
+                              src="/docs/img/homepage/github.svg"
+                              alt="Github"
+                        /></a>
+                     </li>
+                     <li class="nav-link">
+                        <a href="https://twitter.com"
+                           ><img
+                              class="social-icon"
+                              src="/docs/img/homepage/twitter.svg"
+                              alt="Twitter"
+                        /></a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+            <button
+               onclick="scrollToTop()"
+               class="btn btn-square btn-primary btn-circle btn-fab btn-fab-arrow"
+            >
+               <i class="fas fa-angle-double-up"></i>
+            </button>
+         </div>
+      </header>
+      <aside class="container sidebar">
+         <div class="docs-nav">
+            <h3 class="docs-nav-title">Contents</h3>
+            <div class="components">
+               <div class="component">
+                  <a class="docs-nav-link" href="#installation">Installation</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#alerts">Alerts</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#avatars">Avatars</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#badges">Badges</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#buttons">Buttons</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#cards">Cards</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#images">Images</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#inputs">Inputs</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#lists">Lists</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#modals">Modal</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#navigation">Navigation</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#rating">Rating</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#grids">Grids</a>
+               </div>
+               <div class="component">
+                  <a class="docs-nav-link" href="#toast">Toast</a>
+               </div>
             </div>
-        </header>
-        <aside class="container sidebar">
-            <div class="docs-nav">
-                <h3 class="docs-nav-title">Contents</h3>
-                <div class="components">
-                    <div class="component">
-                        <a class="docs-nav-link" href="#installation"
-                            >Installation</a
-                        >
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#alerts">Alerts</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#avatars">Avatars</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#badges">Badges</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#buttons">Buttons</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#cards">Cards</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#images">Images</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#inputs">Inputs</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#lists">Lists</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#modals">Modal</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#navigation"
-                            >Navigation</a
-                        >
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#rating">Rating</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#grids">Grids</a>
-                    </div>
-                    <div class="component">
-                        <a class="docs-nav-link" href="#toast">Toast</a>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <main class="docs-content">
-            <section class="section-doc" id="installation">
-                <h1 class="docs-title">Drift.css</h1>
-                <p class="docs-para">
-                    It is a light-weight and responsive open source CSS library.
-                </p>
-                <h4 class="docs-heading">&#9900; Install manually</h4>
-                <p class="docs-para">
-                    There are 2 ways to get started with Drift CSS library in
-                    your projects. You can either install manually, or from CDN.
-                </p>
-                <button
-                    class="btn btn-primary"
-                    type="submit"
-                    onclick="window.open('https://github.com/duhbhavesh/driftcss/releases/download/1.0.0/drift.min.css')"
-                >
-                    Download Drift CSS
-                </button>
+         </div>
+      </aside>
+      <main class="docs-content">
+         <section class="section-doc" id="installation">
+            <h1 class="docs-title">Drift.css</h1>
+            <p class="docs-para">
+               It is a light-weight and responsive open source CSS library.
+            </p>
+            <p class="docs-para">
+               There are 2 ways to get started with Drift CSS library in your
+               projects. You can either install manually, or from CDN.
+            </p>
+            <h4 class="docs-heading">&#9900; Install manually</h4>
+            <button
+               class="btn btn-primary"
+               type="submit"
+               onclick="window.open('https://github.com/duhbhavesh/driftcss/releases/download/1.0.0/drift.min.css')"
+            >
+               Download Drift CSS
+            </button>
 
-                <p class="docs-para">
-                    Include <code>drift.css</code> located in /dist in your
-                    website or Web app.
-                </p>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            <p class="docs-para">
+               Include <code>drift.css</code> located in /dist in your website
+               or Web app.
+            </p>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;link rel=&quot;stylesheet&quot; href=&quot;drift.min.css&quot;&gt;
 						</code>
 					</pre>
-                </div>
-                <h4 class="docs-heading">&#9900; Install from CDN</h4>
-                <p class="docs-para">
-                    Use the following CDN link to include driftcss in your
-                    project.
-                </p>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+            <h4 class="docs-heading">&#9900; Install from CDN</h4>
+            <p class="docs-para">
+               Use the following CDN link to include driftcss in your project.
+            </p>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/duhbhavesh/driftcss@master/css/minified/drift.min.css&quot;&gt;
 						</code>
 					</pre>
-                </div>
+            </div>
 
-                <p class="component-details note">
-                    <b>Note:</b> Driftcss uses fontawesome library for the
-                    icons, kindly import them it into your files before using
-                    driftcss.
-                </p>
-            </section>
-            <section class="section-doc" id="alerts">
-                <h3 class="component-title">Alerts</h3>
-                <p class="component-details">
-                    Alerts can be used to provide feedback messages to users.
-                    Different types of alerts are available for different types
-                    of messages.
-                </p>
-                <div class="alert alert-default">
-                    <h4 class="alert-heading">
-                        <span
-                            ><i class="fas fa-info-circle"></i> Default alert
-                        </span>
-                    </h4>
-                    <p>This is a default alert</p>
-                </div>
-                <div class="alert alert-primary">
-                    <h4 class="alert-heading">
-                        <span><i class="fas fa-info-circle"></i></span> Primary
-                        alert
-                    </h4>
-                    <p>This is a primary alert</p>
-                </div>
-                <div class="alert alert-success">
-                    <h4 class="alert-heading">
-                        <span><i class="far fa-check-circle"></i></span> Success
-                        alert
-                    </h4>
-                    <p>This is a success alert</p>
-                </div>
-                <div class="alert alert-warning">
-                    <h4 class="alert-heading">
-                        <span><i class="fas fa-exclamation-triangle"></i></span>
-                        Warning alert
-                    </h4>
-                    <p>This is a warning alert</p>
-                </div>
-                <div class="alert alert-error">
-                    <h4 class="alert-heading">
-                        <span><i class="fas fa-exclamation-circle"></i></span>
-                        Error alert
-                    </h4>
-                    <p>This is a error alert</p>
-                </div>
+            <p class="component-details note">
+               <b>Note:</b> Driftcss uses fontawesome library for the icons,
+               kindly import them it into your files before using driftcss.
+            </p>
+         </section>
+         <section class="section-doc" id="alerts">
+            <h3 class="component-title">Alerts</h3>
+            <p class="component-details">
+               Alerts can be used to provide feedback messages to users.
+               Different types of alerts are available for different types of
+               messages.
+            </p>
+            <div class="alert alert-default">
+               <h4 class="alert-heading">
+                  <span><i class="fas fa-info-circle"></i> Default alert </span>
+               </h4>
+               <p>This is a default alert</p>
+            </div>
+            <div class="alert alert-primary">
+               <h4 class="alert-heading">
+                  <span><i class="fas fa-info-circle"></i></span> Primary alert
+               </h4>
+               <p>This is a primary alert</p>
+            </div>
+            <div class="alert alert-success">
+               <h4 class="alert-heading">
+                  <span><i class="far fa-check-circle"></i></span> Success alert
+               </h4>
+               <p>This is a success alert</p>
+            </div>
+            <div class="alert alert-warning">
+               <h4 class="alert-heading">
+                  <span><i class="fas fa-exclamation-triangle"></i></span>
+                  Warning alert
+               </h4>
+               <p>This is a warning alert</p>
+            </div>
+            <div class="alert alert-error">
+               <h4 class="alert-heading">
+                  <span><i class="fas fa-exclamation-circle"></i></span>
+                  Error alert
+               </h4>
+               <p>This is a error alert</p>
+            </div>
 
-                <p class="component-details">
-                    Different alerts background color can be used by changing
-                    the status of alert.
-                    <br />
-                    <b>Example:</b>
-                    <code>.alert-warning to .alert-success </code>
-                </p>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            <p class="component-details">
+               Different alerts background color can be used by changing the
+               status of alert.
+               <br />
+               <b>Example:</b>
+               <code>.alert-warning to .alert-success </code>
+            </p>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;div class=&quot;alert alert-warning&quot;&gt; 
 	&lt;h4 class=&quot;alert-heading&quot;&gt; 
@@ -238,50 +228,48 @@
 &lt;/div&gt;
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="avatars">
-                <h3 class="component-title">Avatars</h3>
-                <p class="component-details">
-                    Avatars are user profile pictures.
-                </p>
-                <h4 class="component-heading">&#9900; Avatar Image</h4>
-                <p class="component-details">
-                    Use <code>avatar-1, avatar-2, avatar-3 & avatar-4</code> in
-                    <code>img src</code> for different avatars below.
-                </p>
-                <ul class="avatars-default">
-                    <li class="avatar-item">
-                        <img
-                            class="avatar avatar-1"
-                            src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-1.png"
-                            alt=""
-                        />
-                    </li>
-                    <li class="avatar-item">
-                        <img
-                            class="avatar avatar-2"
-                            src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-2.png"
-                            alt=""
-                        />
-                    </li>
-                    <li class="avatar-item">
-                        <img
-                            class="avatar avatar-3"
-                            src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-3.png"
-                            alt=""
-                        />
-                    </li>
-                    <li class="avatar-item">
-                        <img
-                            class="avatar avatar-4"
-                            src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-4.png"
-                            alt=""
-                        />
-                    </li>
-                </ul>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+         </section>
+         <section class="section-doc" id="avatars">
+            <h3 class="component-title">Avatars</h3>
+            <p class="component-details">Avatars are user profile pictures.</p>
+            <h4 class="component-heading">&#9900; Avatar Image</h4>
+            <p class="component-details">
+               Use <code>avatar-1, avatar-2, avatar-3 & avatar-4</code> in
+               <code>img src</code> for different avatars below.
+            </p>
+            <ul class="avatars-default">
+               <li class="avatar-item">
+                  <img
+                     class="avatar avatar-1"
+                     src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-1.png"
+                     alt=""
+                  />
+               </li>
+               <li class="avatar-item">
+                  <img
+                     class="avatar avatar-2"
+                     src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-2.png"
+                     alt=""
+                  />
+               </li>
+               <li class="avatar-item">
+                  <img
+                     class="avatar avatar-3"
+                     src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-3.png"
+                     alt=""
+                  />
+               </li>
+               <li class="avatar-item">
+                  <img
+                     class="avatar avatar-4"
+                     src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-4.png"
+                     alt=""
+                  />
+               </li>
+            </ul>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;img 
 	class=&quot;avatar avatar-1&quot; 
@@ -309,28 +297,28 @@
 
 						</code>
 					</pre>
-                </div>
-                <h4 class="component-heading">&#9900; Avatar Background</h4>
-                <p class="component-details">
-                    Use <code>background-color</code> and <code>color</code> to
-                    change avatar colors
-                </p>
-                <div class="avatars-bg">
-                    <div class="avatar-bg avatar-bg-1">
-                        <span class="avatar-bg-text">avatar</span>
-                    </div>
-                    <div class="avatar-bg avatar-bg-2">
-                        <span class="avatar-bg-text">avatar</span>
-                    </div>
-                    <div class="avatar-bg avatar-bg-3">
-                        <span class="avatar-bg-text">avatar</span>
-                    </div>
-                    <div class="avatar-bg avatar-bg-4">
-                        <span class="avatar-bg-text">avatar</span>
-                    </div>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+            <h4 class="component-heading">&#9900; Avatar Background</h4>
+            <p class="component-details">
+               Use <code>background-color</code> and <code>color</code> to
+               change avatar colors
+            </p>
+            <div class="avatars-bg">
+               <div class="avatar-bg avatar-bg-1">
+                  <span class="avatar-bg-text">avatar</span>
+               </div>
+               <div class="avatar-bg avatar-bg-2">
+                  <span class="avatar-bg-text">avatar</span>
+               </div>
+               <div class="avatar-bg avatar-bg-3">
+                  <span class="avatar-bg-text">avatar</span>
+               </div>
+               <div class="avatar-bg avatar-bg-4">
+                  <span class="avatar-bg-text">avatar</span>
+               </div>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;div class=&quot;avatar-bg avatar-bg-1&quot;&gt; 
 	&lt;span class=&quot;avatar-bg-text&quot;&gt;avatar&lt;/span&gt; 
@@ -349,9 +337,9 @@
 &lt;/div&gt;
 						</code>
 					</pre>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-css">
 .avatar-bg-1 {
 	background-color: red;
@@ -362,37 +350,35 @@
 }							
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="badges">
-                <h3 class="component-title">Badges</h3>
-                <p class="component-details">
-                    Badges can be used for labeling components. Different types
-                    of badges are available for different types of labeling.
-                </p>
-                <div class="badges">
-                    <span class="badge badge-default">Default</span>
-                    <span class="badge badge-primary">Primary</span>
-                    <span class="badge badge-success">Success</span>
-                    <span class="badge badge-secondary">Secondary</span>
-                    <span class="badge badge-error">Error</span>
-                </div>
-                <h4 class="component-heading">&#9900; Badges Pill</h4>
-                <p class="component-details">
-                    The class <code>.badge-pill</code> can be used to create
-                    round, pill-like badges.
-                </p>
-                <div class="badges-pill">
-                    <span class="badge badge-default badge-pill">Default</span>
-                    <span class="badge badge-primary badge-pill">Primary</span>
-                    <span class="badge badge-success badge-pill">Success</span>
-                    <span class="badge badge-secondary badge-pill"
-                        >Secondary</span
-                    >
-                    <span class="badge badge-error badge-pill">Error</span>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+         </section>
+         <section class="section-doc" id="badges">
+            <h3 class="component-title">Badges</h3>
+            <p class="component-details">
+               Badges can be used for labeling components. Different types of
+               badges are available for different types of labeling.
+            </p>
+            <div class="badges">
+               <span class="badge badge-default">Default</span>
+               <span class="badge badge-primary">Primary</span>
+               <span class="badge badge-success">Success</span>
+               <span class="badge badge-secondary">Secondary</span>
+               <span class="badge badge-error">Error</span>
+            </div>
+            <h4 class="component-heading">&#9900; Badges Pill</h4>
+            <p class="component-details">
+               The class <code>.badge-pill</code> can be used to create round,
+               pill-like badges.
+            </p>
+            <div class="badges-pill">
+               <span class="badge badge-default badge-pill">Default</span>
+               <span class="badge badge-primary badge-pill">Primary</span>
+               <span class="badge badge-success badge-pill">Success</span>
+               <span class="badge badge-secondary badge-pill">Secondary</span>
+               <span class="badge badge-error badge-pill">Error</span>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Badges default --&gt; 
 &lt;span class=&quot;badge badge-default&quot;&gt;Default&lt;/span&gt; 
@@ -411,28 +397,26 @@
 
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="buttons">
-                <h3 class="component-title">Buttons</h3>
-                <p class="component-details">
-                    Buttons include simple button styles for actions in
-                    different types and sizes.
-                </p>
-                <h4 class="component-heading">&#9900; Buttons default</h4>
-                <div class="buttons buttons-default">
-                    <button class="btn" type="button">Default</button>
-                    <button class="btn btn-primary" type="button">
-                        Primary
-                    </button>
-                    <button class="btn btn-secondary" type="button">
-                        Secondary
-                    </button>
-                    <button class="btn btn-error" type="button">Error</button>
-                    <a href="#" class="btn btn-link" role="button">Link</a>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+         </section>
+         <section class="section-doc" id="buttons">
+            <h3 class="component-title">Buttons</h3>
+            <p class="component-details">
+               Buttons include simple button styles for actions in different
+               types and sizes.
+            </p>
+            <h4 class="component-heading">&#9900; Buttons default</h4>
+            <div class="buttons buttons-default">
+               <button class="btn" type="button">Default</button>
+               <button class="btn btn-primary" type="button">Primary</button>
+               <button class="btn btn-secondary" type="button">
+                  Secondary
+               </button>
+               <button class="btn btn-error" type="button">Error</button>
+               <a href="#" class="btn btn-link" role="button">Link</a>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Common Buttons --&gt; 
 &lt;button class=&quot;btn&quot; type=&quot;button&quot;&gt;Default&lt;/button&gt; 
@@ -442,33 +426,33 @@
 &lt;a href=&quot;#&quot; class=&quot;btn btn-link&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
 						</code>
 					</pre>
-                </div>
-                <h4 class="component-heading">&#9900; Buttons pill</h4>
-                <p class="component-details">
-                    The class <code>.btn-pill</code> can be used to create
-                    round, pill-like Buttons.
-                </p>
-                <div class="buttons buttons-pills">
-                    <button class="btn btn-pill" type="button">Default</button>
-                    <button class="btn btn-primary btn-pill" type="button">
-                        Primary
-                    </button>
-                    <button class="btn btn-secondary btn-pill" type="button">
-                        Secondary
-                    </button>
-                    <button class="btn btn-error btn-pill" type="button">
-                        Error
-                    </button>
-                    <a
-                        href="#"
-                        id="btn-link"
-                        class="btn btn-primary btn-link btn-pill"
-                        role="button"
-                        >Link</a
-                    >
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+            <h4 class="component-heading">&#9900; Buttons pill</h4>
+            <p class="component-details">
+               The class <code>.btn-pill</code> can be used to create round,
+               pill-like Buttons.
+            </p>
+            <div class="buttons buttons-pills">
+               <button class="btn btn-pill" type="button">Default</button>
+               <button class="btn btn-primary btn-pill" type="button">
+                  Primary
+               </button>
+               <button class="btn btn-secondary btn-pill" type="button">
+                  Secondary
+               </button>
+               <button class="btn btn-error btn-pill" type="button">
+                  Error
+               </button>
+               <a
+                  href="#"
+                  id="btn-link"
+                  class="btn btn-primary btn-link btn-pill"
+                  role="button"
+                  >Link</a
+               >
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Pill Buttons --&gt; 
 &lt;button class=&quot;btn btn-pill&quot; type=&quot;button&quot;&gt;Default&lt;/button&gt; 
@@ -478,33 +462,30 @@
 &lt;a href=&quot;#&quot; class=&quot;btn btn-link btn-pill&quot; role=&quot;button&quot;&gt;Link&lt;/a&gt;
 						</code>
 					</pre>
-                </div>
-                <h4 class="component-heading">&#9900; Button icons</h4>
-                <p class="component-details">Icon like buttons.</p>
-                <div class="buttons buttons-icons">
-                    <button class="btn btn-square" type="button">
-                        &times;
-                    </button>
-                    <button class="btn btn-square btn-primary" type="button">
-                        &plus;
-                    </button>
-                    <button class="btn btn-square btn-circle" type="button">
-                        &times;
-                    </button>
-                    <button
-                        class="btn btn-square btn-primary btn-circle"
-                        type="button"
-                    >
-                        &plus;
-                    </button>
-                </div>
-                <p class="component-details">
-                    For top right button use <code>.btn-top-right</code> by
-                    giving <code>position: relative</code> to the parent
-                    element.
-                </p>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+            <h4 class="component-heading">&#9900; Button icons</h4>
+            <p class="component-details">Icon like buttons.</p>
+            <div class="buttons buttons-icons">
+               <button class="btn btn-square" type="button">&times;</button>
+               <button class="btn btn-square btn-primary" type="button">
+                  &plus;
+               </button>
+               <button class="btn btn-square btn-circle" type="button">
+                  &times;
+               </button>
+               <button
+                  class="btn btn-square btn-primary btn-circle"
+                  type="button"
+               >
+                  &plus;
+               </button>
+            </div>
+            <p class="component-details">
+               For top right button use <code>.btn-top-right</code> by giving
+               <code>position: relative</code> to the parent element.
+            </p>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Button icons --&gt; 
 &lt;button class=&quot;btn btn-square&quot; type=&quot;button&quot;&gt;&amp;times;&lt;/button&gt; 
@@ -513,23 +494,21 @@
 &lt;button class=&quot;btn btn-square btn-primary btn-circle&quot; type=&quot;button&quot;&gt;&amp;plus;&lt;/button&gt;
 						</code>
 					</pre>
-                </div>
-                <h4 class="component-heading">
-                    &#9900; Floating Action Buttons
-                </h4>
-                <p class="component-details">
-                    A floating action button (FAB) performs the primary, or most
-                    common, action on a screen.
-                </p>
-                <div class="buttons buttons-floats">
-                    <button
-                        class="btn btn-square btn-primary btn-circle btn-fab btn-fab-edit"
-                    >
-                        <i class="fas fa-pen"></i>
-                    </button>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+            <h4 class="component-heading">&#9900; Floating Action Buttons</h4>
+            <p class="component-details">
+               A floating action button (FAB) performs the primary, or most
+               common, action on a screen.
+            </p>
+            <div class="buttons buttons-floats">
+               <button
+                  class="btn btn-square btn-primary btn-circle btn-fab btn-fab-edit"
+               >
+                  <i class="fas fa-pen"></i>
+               </button>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Floating Action Buttons --&gt; 
 &lt;button class=&quot;btn btn-square btn-primary btn-circle btn-fab btn-fab-edit&quot; &gt;
@@ -541,133 +520,123 @@
 &lt;/button&gt; 
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="cards">
-                <h3 class="component-title">Cards</h3>
-                <p class="component-details">
-                    A card is a self-contained, replicable type.
-                </p>
-                <div class="cards">
-                    <div class="card card-badge">
-                        <img
-                            class="card-img"
-                            src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615908702/driftcss/static/card-1.jpg"
-                            alt=""
-                        />
-                        <span class="badge badge-default">10th Mar, 2021</span>
-                        <p class="card-para">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Eum, distinctio. amet consectetur adipisicing
-                            elit...
-                        </p>
-                        <button class="btn btn-primary btn-pill" type="button">
-                            Read More
-                        </button>
-                    </div>
-                    <div class="card card-dismiss">
-                        <img
-                            class="card-img"
-                            src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615911023/driftcss/static/card-3.jpg"
-                            alt=""
-                        />
-                        <button
-                            class="btn btn-square btn-circle btn-top-right"
-                            type="button"
+            </div>
+         </section>
+         <section class="section-doc" id="cards">
+            <h3 class="component-title">Cards</h3>
+            <p class="component-details">
+               A card is a self-contained, replicable type.
+            </p>
+            <div class="cards">
+               <div class="card card-badge">
+                  <img
+                     class="card-img"
+                     src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615908702/driftcss/static/card-1.jpg"
+                     alt=""
+                  />
+                  <span class="badge badge-default">10th Mar, 2021</span>
+                  <p class="card-para">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Eum, distinctio. amet consectetur adipisicing elit...
+                  </p>
+                  <button class="btn btn-primary btn-pill" type="button">
+                     Read More
+                  </button>
+               </div>
+               <div class="card card-dismiss">
+                  <img
+                     class="card-img"
+                     src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615911023/driftcss/static/card-3.jpg"
+                     alt=""
+                  />
+                  <button
+                     class="btn btn-square btn-circle btn-top-right"
+                     type="button"
+                  >
+                     &times;
+                  </button>
+                  <span class="badge badge-default">10th Mar, 2021</span>
+                  <p class="card-para">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Eum, distinctio. amet consectetur adipisicing elit...
+                  </p>
+                  <button class="btn btn-primary btn-pill" type="button">
+                     Read More
+                  </button>
+               </div>
+               <div class="card product product-card">
+                  <button
+                     class="btn btn-square btn-circle btn-top-right"
+                     type="button"
+                  >
+                     <i class="far fa-heart"></i>
+                  </button>
+                  <div class="product-image">
+                     <img class="card-img" src="/static/hoodie.jfif" alt="" />
+                  </div>
+                  <div class="product-details">
+                     <h3 class="product-heading">
+                        <a id="product-title" href="#"
+                           >Sweatshirt Relaxed Fit</a
                         >
-                            &times;
-                        </button>
-                        <span class="badge badge-default">10th Mar, 2021</span>
-                        <p class="card-para">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Eum, distinctio. amet consectetur adipisicing
-                            elit...
+                     </h3>
+                     <div class="product-price">
+                        <p class="new-price">
+                           ₹649 <span class="old-price">₹1299</span>
                         </p>
-                        <button class="btn btn-primary btn-pill" type="button">
-                            Read More
+                     </div>
+                  </div>
+                  <div class="product-details">
+                     <div class="rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><strong>4.5</strong>/5.0</span>
+                     </div>
+
+                     <div class="cart">
+                        <button class="btn btn-primary btn-cart" type="button">
+                           Add to Cart
                         </button>
-                    </div>
-                    <div class="card product product-card">
+                     </div>
+                  </div>
+               </div>
+               <div class="card card-overlay">
+                  <img
+                     class="card-img overlay-img"
+                     src="https://res.cloudinary.com/duhbhavesh/image/upload/v1616150651/driftcss/static/card-img-4.jpg"
+                     alt=""
+                  />
+                  <div class="overlay-text">
+                     <h2 class="overlay-heading">MacBook Air</h2>
+                     <p class="card-para card-content">
+                        Our thinnest, lightest notebook, completely transformed
+                        by the Apple M1 chip. CPU speeds up to 3.5x faster.
+                     </p>
+                     <div class="product-price">
+                        <p class="new-price">
+                           ₹92900
+                           <span class="old-price">₹1,20,999</span>
+                        </p>
+                     </div>
+                  </div>
+                  <div class="product-details overlay-details">
+                     <div class="product-rating">
+                        <span><i class="fas fa-star"></i></span>
+                        <span><strong>4.5</strong>/5.0</span>
+                     </div>
+
+                     <div class="product-cart">
                         <button
-                            class="btn btn-square btn-circle btn-top-right"
-                            type="button"
+                           class="btn btn-primary btn-pill btn-cart"
+                           type="button"
                         >
-                            <i class="far fa-heart"></i>
+                           Add to Cart
                         </button>
-                        <div class="product-image">
-                            <img
-                                class="card-img"
-                                src="/static/hoodie.jfif"
-                                alt=""
-                            />
-                        </div>
-                        <div class="product-details">
-                            <h3 class="product-heading">
-                                <a id="product-title" href="#"
-                                    >Sweatshirt Relaxed Fit</a
-                                >
-                            </h3>
-                            <div class="product-price">
-                                <p class="new-price">
-                                    ₹649 <span class="old-price">₹1299</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="product-details">
-                            <div class="rating">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><strong>4.5</strong>/5.0</span>
-                            </div>
-
-                            <div class="cart">
-                                <button
-                                    class="btn btn-primary btn-cart"
-                                    type="button"
-                                >
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card card-overlay">
-                        <img
-                            class="card-img overlay-img"
-                            src="https://res.cloudinary.com/duhbhavesh/image/upload/v1616150651/driftcss/static/card-img-4.jpg"
-                            alt=""
-                        />
-                        <div class="overlay-text">
-                            <h2 class="overlay-heading">MacBook Air</h2>
-                            <p class="card-para card-content">
-                                Our thinnest, lightest notebook, completely
-                                transformed by the Apple M1 chip. CPU speeds up
-                                to 3.5x faster.
-                            </p>
-                            <div class="product-price">
-                                <p class="new-price">
-                                    ₹92900
-                                    <span class="old-price">₹1,20,999</span>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="product-details overlay-details">
-                            <div class="product-rating">
-                                <span><i class="fas fa-star"></i></span>
-                                <span><strong>4.5</strong>/5.0</span>
-                            </div>
-
-                            <div class="product-cart">
-                                <button
-                                    class="btn btn-primary btn-pill btn-cart"
-                                    type="button"
-                                >
-                                    Add to Cart
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Card badge --&gt; 
 &lt;div class=&quot;card card-badge&quot;&gt; 
@@ -736,41 +705,41 @@
 &lt;/div&gt;
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="images">
-                <h3 class="component-title">Images</h3>
-                <p class="component-details">
-                    Images can be made responsive using the
-                    <code>.img-responsive</code> class,
-                </p>
-                <div class="images">
-                    <h4 class="component-title">&#9900; Image Responsive</h4>
-                    <div class="images-responsive">
-                        <img
-                            class="img-responsive"
-                            src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615908702/driftcss/static/card-1.jpg"
-                            alt="Mountain Image"
-                        />
-                    </div>
-                    <h4 class="component-heading">
-                        &#9900; Image Rounded & Thumbnail
-                    </h4>
+            </div>
+         </section>
+         <section class="section-doc" id="images">
+            <h3 class="component-title">Images</h3>
+            <p class="component-details">
+               Images can be made responsive using the
+               <code>.img-responsive</code> class,
+            </p>
+            <div class="images">
+               <h4 class="component-title">&#9900; Image Responsive</h4>
+               <div class="images-responsive">
+                  <img
+                     class="img-responsive"
+                     src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615908702/driftcss/static/card-1.jpg"
+                     alt="Mountain Image"
+                  />
+               </div>
+               <h4 class="component-heading">
+                  &#9900; Image Rounded & Thumbnail
+               </h4>
 
-                    <div class="images-round-thumbnail">
-                        <img
-                            class="img-responsive img-rounded"
-                            src="/static/card-img-5.jpg"
-                            alt="Mountain Image"
-                        />
-                        <img
-                            class="img-responsive img-thumbnail"
-                            src="/static/card-img-5.jpg"
-                            alt="Mountain Image"
-                        />
-                    </div>
-                    <div class="code-toolbar">
-                        <pre id="code" class="code">
+               <div class="images-round-thumbnail">
+                  <img
+                     class="img-responsive img-rounded"
+                     src="/static/card-img-5.jpg"
+                     alt="Mountain Image"
+                  />
+                  <img
+                     class="img-responsive img-thumbnail"
+                     src="/static/card-img-5.jpg"
+                     alt="Mountain Image"
+                  />
+               </div>
+               <div class="code-toolbar">
+                  <pre id="code" class="code">
 							<code class="lang-html">
 &lt;!-- Responsive Image --&gt;
 &lt;img class=&quot;img-responsive&quot; src=&quot;/img.jpg&quot; alt=&quot;...&quot; /&gt; 
@@ -782,38 +751,36 @@
 &lt;img class=&quot;img-responsive img-thumbnail&quot; src=&quot;/img.jpg&quot; alt=&quot;...&quot; /&gt;
 							</code>
 						</pre>
-                    </div>
-                </div>
-            </section>
-            <section class="section-doc" id="inputs">
-                <h3 class="component-title">Inputs</h3>
-                <p class="component-details">Simple text form elements</p>
-                <h4 class="component-heading">&#9900; Input Defaults</h4>
-                <div class="column input">
-                    <div class="input-group">
-                        <label class="input-label" for="input-example-1"
-                            >Name</label
-                        >
-                        <input
-                            class="input-box"
-                            type="text"
-                            id="input-example-1"
-                            placeholder="Name"
-                        />
-                    </div>
-                    <div class="input-group">
-                        <label class="input-label" for="input-example-2"
-                            >E-mail</label
-                        >
-                        <input
-                            class="input-box"
-                            type="email"
-                            id="input-example-2"
-                            placeholder="E-mail"
-                        />
-                    </div>
-                    <div class="code-toolbar">
-                        <pre id="code" class="code">
+               </div>
+            </div>
+         </section>
+         <section class="section-doc" id="inputs">
+            <h3 class="component-title">Inputs</h3>
+            <p class="component-details">Simple text form elements</p>
+            <h4 class="component-heading">&#9900; Input Defaults</h4>
+            <div class="column input">
+               <div class="input-group">
+                  <label class="input-label" for="input-example-1">Name</label>
+                  <input
+                     class="input-box"
+                     type="text"
+                     id="input-example-1"
+                     placeholder="Name"
+                  />
+               </div>
+               <div class="input-group">
+                  <label class="input-label" for="input-example-2"
+                     >E-mail</label
+                  >
+                  <input
+                     class="input-box"
+                     type="email"
+                     id="input-example-2"
+                     placeholder="E-mail"
+                  />
+               </div>
+               <div class="code-toolbar">
+                  <pre id="code" class="code">
 							<code class="lang-html">
 &lt;!-- Input Default --&gt; 
 &lt;div class=&quot;input-group&quot;&gt; 
@@ -827,40 +794,38 @@
 &lt;/div&gt;
 							</code>
 						</pre>
-                    </div>
-                    <h4 class="component-heading">&#9900; Input Validation</h4>
-                    <div class="input-group">
-                        <label class="input-label" for="input-example-1"
-                            >Name</label
-                        >
-                        <input
-                            class="input-box is-success"
-                            type="text"
-                            id="input-example-1"
-                            placeholder="..."
-                            required
-                        />
-                        <p class="input-hint input-hint-success">
-                            The name is valid.
-                        </p>
-                    </div>
-                    <div class="input-group">
-                        <label class="input-label" for="input-example-2"
-                            >Password</label
-                        >
-                        <input
-                            class="input-box is-error"
-                            type="password"
-                            id="input-example-2"
-                            placeholder="..."
-                            required
-                        />
-                        <p class="input-hint input-hint-error">
-                            Password must be at least 8 characters.
-                        </p>
-                    </div>
-                    <div class="code-toolbar">
-                        <pre id="code" class="code">
+               </div>
+               <h4 class="component-heading">&#9900; Input Validation</h4>
+               <div class="input-group">
+                  <label class="input-label" for="input-example-1">Name</label>
+                  <input
+                     class="input-box is-success"
+                     type="text"
+                     id="input-example-1"
+                     placeholder="..."
+                     required
+                  />
+                  <p class="input-hint input-hint-success">
+                     The name is valid.
+                  </p>
+               </div>
+               <div class="input-group">
+                  <label class="input-label" for="input-example-2"
+                     >Password</label
+                  >
+                  <input
+                     class="input-box is-error"
+                     type="password"
+                     id="input-example-2"
+                     placeholder="..."
+                     required
+                  />
+                  <p class="input-hint input-hint-error">
+                     Password must be at least 8 characters.
+                  </p>
+               </div>
+               <div class="code-toolbar">
+                  <pre id="code" class="code">
 							<code class="lang-html">
 &lt;!-- Input Validation --&gt; 
 &lt;div class=&quot;input-group&quot;&gt; 
@@ -876,57 +841,48 @@
 &lt;/div&gt;
 							</code>
 						</pre>
-                    </div>
-                </div>
-            </section>
-            <section class="section-doc" id="lists">
-                <h3 class="component-title">Lists</h3>
-                <p class="component-details">
-                    The List is a very versatile and common way to display
-                    items.
-                </p>
-                <div class="lists">
-                    <h4 class="component-heading">&#9900; List Default</h4>
-                    <ul class="list list-default">
-                        <li class="list-item">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </li>
-                        <li class="list-item">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </li>
-                        <li class="list-item">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </li>
-                        <li class="list-item">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </li>
-                    </ul>
-                    <h4 class="component-heading">&#9900; List Stack</h4>
-                    <ul class="list list-stack">
-                        <li class="list-item">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </li>
-                        <li class="list-item">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </li>
-                        <li class="list-item">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </li>
-                        <li class="list-item">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit.
-                        </li>
-                    </ul>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+               </div>
+            </div>
+         </section>
+         <section class="section-doc" id="lists">
+            <h3 class="component-title">Lists</h3>
+            <p class="component-details">
+               The List is a very versatile and common way to display items.
+            </p>
+            <div class="lists">
+               <h4 class="component-heading">&#9900; List Default</h4>
+               <ul class="list list-default">
+                  <li class="list-item">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li class="list-item">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li class="list-item">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li class="list-item">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+               </ul>
+               <h4 class="component-heading">&#9900; List Stack</h4>
+               <ul class="list list-stack">
+                  <li class="list-item">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li class="list-item">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li class="list-item">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+                  <li class="list-item">
+                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  </li>
+               </ul>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- List Default --&gt; 
 &lt;ul class=&quot;list list-default&quot;&gt; 
@@ -946,42 +902,40 @@
 &lt;/ul&gt;
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="modals">
-                <h3 class="component-title">Modals</h3>
-                <p class="component-details">
-                    Modals are flexible dialog prompts.
-                </p>
-                <div class="modals">
-                    <button class="btn btn-primary" id="open-modal-btn">
-                        Show Modal
-                    </button>
-                    <div id="modal-overlay"></div>
-                    <div class="modal" id="modal">
-                        <h3 class="modal-title">This is a modal</h3>
-                        <p class="modal-para">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Recusandae, tempore?
-                        </p>
-                        <button
-                            class="btn btn-square btn-circle btn-top-right"
-                            id="close-modal-btn-icon"
-                            type="button"
-                        >
-                            &times;
-                        </button>
-                        <button
-                            class="btn btn-primary"
-                            type="button"
-                            id="close-modal-btn"
-                        >
-                            Close Modal
-                        </button>
-                    </div>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+         </section>
+         <section class="section-doc" id="modals">
+            <h3 class="component-title">Modals</h3>
+            <p class="component-details">Modals are flexible dialog prompts.</p>
+            <div class="modals">
+               <button class="btn btn-primary" id="open-modal-btn">
+                  Show Modal
+               </button>
+               <div id="modal-overlay"></div>
+               <div class="modal" id="modal">
+                  <h3 class="modal-title">This is a modal</h3>
+                  <p class="modal-para">
+                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                     Recusandae, tempore?
+                  </p>
+                  <button
+                     class="btn btn-square btn-circle btn-top-right"
+                     id="close-modal-btn-icon"
+                     type="button"
+                  >
+                     &times;
+                  </button>
+                  <button
+                     class="btn btn-primary"
+                     type="button"
+                     id="close-modal-btn"
+                  >
+                     Close Modal
+                  </button>
+               </div>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Modal --&gt; 
 &lt;div class=&quot;modal&quot; id=&quot;modal&quot;&gt; 
@@ -992,50 +946,50 @@
 &lt;/div&gt;
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="navigation">
-                <h3 class="component-title">Navigation</h3>
-                <p class="component-details">
-                    Navbars are flexbox based navigation headers which can be
-                    used to display branding, navigation links, buttons, and
-                    also regular text.
-                </p>
-                <div class="navbars">
-                    <nav class="navbar">
-                        <a class="navbar-brand navbar-link" href="#">Brand</a>
-                        <div class="navbar-nav">
-                            <a class="nav-item navbar-link" href="#">Home</a>
-                            <a class="nav-item navbar-link" href="#">About</a>
-                            <a
-                                href="#"
-                                id="btn-link"
-                                class="btn btn-primary btn-link btn-pill navbar-link"
-                                role="button"
-                                >Contact</a
-                            >
-                        </div>
-                    </nav>
-                    <nav class="navbar">
-                        <a class="navbar-brand navbar-link" href="#">Brand</a>
-                        <div class="navbar-nav">
-                            <a class="nav-item navbar-link" href="#">Home</a>
-                            <a class="nav-item navbar-link" href="#">About</a>
-                            <a class="nav-item navbar-link" href="#">Pricing</a>
-                        </div>
-                        <div class="navbar-nav">
-                            <a
-                                href="#"
-                                id="btn-link"
-                                class="btn btn-primary btn-link btn-pill navbar-link"
-                                role="button"
-                                >Contact</a
-                            >
-                        </div>
-                    </nav>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+         </section>
+         <section class="section-doc" id="navigation">
+            <h3 class="component-title">Navigation</h3>
+            <p class="component-details">
+               Navbars are flexbox based navigation headers which can be used to
+               display branding, navigation links, buttons, and also regular
+               text.
+            </p>
+            <div class="navbars">
+               <nav class="navbar">
+                  <a class="navbar-brand navbar-link" href="#">Brand</a>
+                  <div class="navbar-nav">
+                     <a class="nav-item navbar-link" href="#">Home</a>
+                     <a class="nav-item navbar-link" href="#">About</a>
+                     <a
+                        href="#"
+                        id="btn-link"
+                        class="btn btn-primary btn-link btn-pill navbar-link"
+                        role="button"
+                        >Contact</a
+                     >
+                  </div>
+               </nav>
+               <nav class="navbar">
+                  <a class="navbar-brand navbar-link" href="#">Brand</a>
+                  <div class="navbar-nav">
+                     <a class="nav-item navbar-link" href="#">Home</a>
+                     <a class="nav-item navbar-link" href="#">About</a>
+                     <a class="nav-item navbar-link" href="#">Pricing</a>
+                  </div>
+                  <div class="navbar-nav">
+                     <a
+                        href="#"
+                        id="btn-link"
+                        class="btn btn-primary btn-link btn-pill navbar-link"
+                        role="button"
+                        >Contact</a
+                     >
+                  </div>
+               </nav>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Navbars --&gt; 
 &lt;nav class=&quot;navbar&quot;&gt; 
@@ -1059,29 +1013,29 @@
 &lt;/nav&gt;
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="rating">
-                <h3 class="component-title">Ratings</h3>
-                <p class="component-details">
-                    Ratins allow the users to share their opinion about the
-                    product, documentation page, photo and more.
-                </p>
-                <div class="ratings">
-                    <div class="rating">
-                        <span><i class="fas fa-star"></i></span>
-                        <span><strong>4.5</strong>/5.0</span>
-                    </div>
-                    <div class="rating">
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star"></i></span>
-                        <span><i class="fas fa-star fa-star-half"></i></span>
-                    </div>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+         </section>
+         <section class="section-doc" id="rating">
+            <h3 class="component-title">Ratings</h3>
+            <p class="component-details">
+               Ratins allow the users to share their opinion about the product,
+               documentation page, photo and more.
+            </p>
+            <div class="ratings">
+               <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><strong>4.5</strong>/5.0</span>
+               </div>
+               <div class="rating">
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star"></i></span>
+                  <span><i class="fas fa-star fa-star-half"></i></span>
+               </div>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Rating --&gt; 
 &lt;div class=&quot;rating&quot;&gt; 
@@ -1099,42 +1053,42 @@
 &lt;/div&gt;
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="grids">
-                <h3 class="component-title">Grids</h3>
-                <p class="component-details">
-                    The grid system in Driftcss is a flexbox based.
-                </p>
-                <div class="grids">
-                    <div class="row">
-                        <div class="column">
-                            <span class="column-demo">1</span>
-                        </div>
-                        <div class="column">
-                            <span class="column-demo">2</span>
-                        </div>
-                        <div class="column">
-                            <span class="column-demo">3</span>
-                        </div>
-                        <div class="column">
-                            <span class="column-demo">4</span>
-                        </div>
-                        <div class="column">
-                            <span class="column-demo">5</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="column">
-                            <span class="column-demo">1</span>
-                        </div>
-                        <div class="column column-50 column-offset-25">
-                            <span class="column-demo">2</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+         </section>
+         <section class="section-doc" id="grids">
+            <h3 class="component-title">Grids</h3>
+            <p class="component-details">
+               The grid system in Driftcss is a flexbox based.
+            </p>
+            <div class="grids">
+               <div class="row">
+                  <div class="column">
+                     <span class="column-demo">1</span>
+                  </div>
+                  <div class="column">
+                     <span class="column-demo">2</span>
+                  </div>
+                  <div class="column">
+                     <span class="column-demo">3</span>
+                  </div>
+                  <div class="column">
+                     <span class="column-demo">4</span>
+                  </div>
+                  <div class="column">
+                     <span class="column-demo">5</span>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="column">
+                     <span class="column-demo">1</span>
+                  </div>
+                  <div class="column column-50 column-offset-25">
+                     <span class="column-demo">2</span>
+                  </div>
+               </div>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Grids --&gt; 
 &lt;div class=&quot;row&quot;&gt; 
@@ -1152,90 +1106,80 @@
 &lt;/div&gt;
 						</code>
 					</pre>
-                </div>
-            </section>
-            <section class="section-doc" id="toast">
-                <h3 class="component-title">Toast</h3>
-                <p class="component-details">
-                    Toasts provide brief messages about app processes. The
-                    component is also known as a Snackbar.
-                </p>
-                <div class="toasts">
-                    <a
-                        href="##"
-                        class="btn btn-link"
-                        id="toast-demo-open"
-                        role="button"
-                        >Open Success Toast</a
-                    >
-                    <div class="toast toast-info">
-                        <div class="toast-details">
-                            <div class="toast-icon">
-                                <i class="fas fa-info-circle"></i>
-                            </div>
-                            <div class="toast-msg">
-                                This is an info message!
-                            </div>
-                        </div>
-                        <div class="toast-icon-close">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="toast toast-success">
-                        <div class="toast-details">
-                            <div class="toast-icon">
-                                <i class="far fa-check-circle"></i>
-                            </div>
-                            <div class="toast-msg">
-                                This is a success message!
-                            </div>
-                        </div>
-                        <div class="toast-icon-close">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="toast toast-error">
-                        <div class="toast-details">
-                            <div class="toast-icon">
-                                <i class="fas fa-exclamation-circle"></i>
-                            </div>
-                            <div class="toast-msg">
-                                This is an error message!
-                            </div>
-                        </div>
-                        <div class="toast-icon-close">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div class="toast toast-warning">
-                        <div class="toast-details">
-                            <div class="toast-icon">
-                                <i class="fas fa-exclamation-triangle"></i>
-                            </div>
-                            <div class="toast-msg">
-                                This is a warning message!
-                            </div>
-                        </div>
-                        <div class="toast-icon-close">
-                            <i class="fas fa-times"></i>
-                        </div>
-                    </div>
-                    <div id="toast-demo" class="toast toast-success">
-                        <div class="toast-details">
-                            <div class="toast-icon">
-                                <i class="far fa-check-circle"></i>
-                            </div>
-                            <div class="toast-msg">
-                                This is a success message!
-                            </div>
-                        </div>
-                        <div class="toast-icon-close">
-                            <i id="toast-demo-close" class="fas fa-times"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="code-toolbar">
-                    <pre id="code" class="code">
+            </div>
+         </section>
+         <section class="section-doc" id="toast">
+            <h3 class="component-title">Toast</h3>
+            <p class="component-details">
+               Toasts provide brief messages about app processes. The component
+               is also known as a Snackbar.
+            </p>
+            <div class="toasts">
+               <a
+                  href="##"
+                  class="btn btn-link"
+                  id="toast-demo-open"
+                  role="button"
+                  >Open Success Toast</a
+               >
+               <div class="toast toast-info">
+                  <div class="toast-details">
+                     <div class="toast-icon">
+                        <i class="fas fa-info-circle"></i>
+                     </div>
+                     <div class="toast-msg">This is an info message!</div>
+                  </div>
+                  <div class="toast-icon-close">
+                     <i class="fas fa-times"></i>
+                  </div>
+               </div>
+               <div class="toast toast-success">
+                  <div class="toast-details">
+                     <div class="toast-icon">
+                        <i class="far fa-check-circle"></i>
+                     </div>
+                     <div class="toast-msg">This is a success message!</div>
+                  </div>
+                  <div class="toast-icon-close">
+                     <i class="fas fa-times"></i>
+                  </div>
+               </div>
+               <div class="toast toast-error">
+                  <div class="toast-details">
+                     <div class="toast-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                     </div>
+                     <div class="toast-msg">This is an error message!</div>
+                  </div>
+                  <div class="toast-icon-close">
+                     <i class="fas fa-times"></i>
+                  </div>
+               </div>
+               <div class="toast toast-warning">
+                  <div class="toast-details">
+                     <div class="toast-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                     </div>
+                     <div class="toast-msg">This is a warning message!</div>
+                  </div>
+                  <div class="toast-icon-close">
+                     <i class="fas fa-times"></i>
+                  </div>
+               </div>
+               <div id="toast-demo" class="toast toast-success">
+                  <div class="toast-details">
+                     <div class="toast-icon">
+                        <i class="far fa-check-circle"></i>
+                     </div>
+                     <div class="toast-msg">This is a success message!</div>
+                  </div>
+                  <div class="toast-icon-close">
+                     <i id="toast-demo-close" class="fas fa-times"></i>
+                  </div>
+               </div>
+            </div>
+            <div class="code-toolbar">
+               <pre id="code" class="code">
 						<code class="lang-html">
 &lt;!-- Toast --&gt; 
 &lt;div class=&quot;toast toast-info&quot;&gt; 
@@ -1274,51 +1218,51 @@
 &lt;/div&gt;
 						</code>
 					</pre>
-                </div>
-            </section>
-        </main>
-        <script>
-            // window scroll top
-            const scrollToTop = () => {
-                window.scrollTo(0, 0);
-            };
+            </div>
+         </section>
+      </main>
+      <script>
+         // window scroll top
+         const scrollToTop = () => {
+            window.scrollTo(0, 0);
+         };
 
-            // modal
-            const modal = document.querySelector('#modal');
-            const openModalButton = document.querySelector('#open-modal-btn');
-            const closeModalButton = document.querySelector('#close-modal-btn');
-            const closeModalButtonIcon = document.querySelector(
-                '#close-modal-btn-icon',
-            );
-            const overlay = document.querySelector('#modal-overlay');
+         // modal
+         const modal = document.querySelector('#modal');
+         const openModalButton = document.querySelector('#open-modal-btn');
+         const closeModalButton = document.querySelector('#close-modal-btn');
+         const closeModalButtonIcon = document.querySelector(
+            '#close-modal-btn-icon',
+         );
+         const overlay = document.querySelector('#modal-overlay');
 
-            openModalButton.addEventListener('click', () => {
-                modal.classList.add('open');
-                overlay.classList.add('open');
-            });
+         openModalButton.addEventListener('click', () => {
+            modal.classList.add('open');
+            overlay.classList.add('open');
+         });
 
-            closeModalButton.addEventListener('click', closeModal);
-            closeModalButtonIcon.addEventListener('click', closeModal);
-            overlay.addEventListener('click', closeModal);
+         closeModalButton.addEventListener('click', closeModal);
+         closeModalButtonIcon.addEventListener('click', closeModal);
+         overlay.addEventListener('click', closeModal);
 
-            function closeModal() {
-                modal.classList.remove('open');
-                overlay.classList.remove('open');
-            }
+         function closeModal() {
+            modal.classList.remove('open');
+            overlay.classList.remove('open');
+         }
 
-            // toast
-            const toast = document.querySelector('#toast-demo');
-            const openToastBtn = document.querySelector('#toast-demo-open');
-            const closeToastBtn = document.querySelector('#toast-demo-close');
+         // toast
+         const toast = document.querySelector('#toast-demo');
+         const openToastBtn = document.querySelector('#toast-demo-open');
+         const closeToastBtn = document.querySelector('#toast-demo-close');
 
-            openToastBtn.addEventListener('click', () => {
-                toast.classList.add('open');
-            });
-            closeToastBtn.addEventListener('click', closeToast);
+         openToastBtn.addEventListener('click', () => {
+            toast.classList.add('open');
+         });
+         closeToastBtn.addEventListener('click', closeToast);
 
-            function closeToast() {
-                toast.classList.remove('open');
-            }
-        </script>
-    </body>
+         function closeToast() {
+            toast.classList.remove('open');
+         }
+      </script>
+   </body>
 </html>
