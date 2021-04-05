@@ -6,8 +6,15 @@ ul {
   text-align: center;
   align-items: center;
 }
+.nav-left {
+  width: 70%;
+}
 .nav-links {
   padding: 0;
+  display: flex;
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  justify-content: space-around;
 }
 .nav-link {
   font-weight: 700;
@@ -120,10 +127,12 @@ ul {
   .nav-links {
     display: flex;
     align-items: center;
-    margin-right: 2.4rem;
   }
   .nav-link {
     margin-left: 0.8rem;
+  }
+  .nav-left {
+    width: 30%;
   }
   .nav .nav-right,
 .nav .social-icons {
@@ -165,6 +174,10 @@ ul {
   }
 }
 @media (min-width: 960px) {
+  .nav-left {
+    width: 20%;
+  }
+
   .hero {
     flex-direction: row;
     justify-content: space-between;

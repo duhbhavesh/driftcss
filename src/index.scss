@@ -29,8 +29,16 @@ ul {
    text-align: center;
    align-items: center;
 
+   &-left {
+      width: 70%;
+   }
+
    &-links {
       padding: 0;
+      display: flex;
+      margin-top: $unit-4;
+      margin-bottom: $unit-4;
+      justify-content: space-around;
    }
 
    &-link {
@@ -162,11 +170,14 @@ ul {
       &-links {
          display: flex;
          align-items: center;
-         margin-right: $unit-12;
       }
 
       &-link {
          margin-left: $unit-4;
+      }
+
+      &-left {
+         width: 30%;
       }
 
       .nav-right,
@@ -219,6 +230,10 @@ ul {
 }
 
 @media (min-width: $size-lg) {
+   .nav-left {
+      width: 20%;
+   }
+
    .hero {
       flex-direction: row;
       justify-content: space-between;
