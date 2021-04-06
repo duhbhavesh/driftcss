@@ -616,6 +616,7 @@ img {
 .product {
   position: relative;
   padding: 0.6rem;
+  border: none;
   border-radius: 0.6rem;
 }
 .product:hover {

@@ -1,167 +1,168 @@
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
 }
 
 .card {
-    position: relative;
-    border: 1px solid $border-color-dark;
-    border-radius: $border-radius;
-    padding: $unit-4;
-    width: 100%;
-    height: 100%;
-    margin-top: $unit-8;
+   position: relative;
+   border: 1px solid $border-color-dark;
+   border-radius: $border-radius;
+   padding: $unit-4;
+   width: 100%;
+   height: 100%;
+   margin-top: $unit-8;
 
-    &-img {
-        border-radius: $border-radius;
-        margin-bottom: $unit-4;
-    }
+   &-img {
+      border-radius: $border-radius;
+      margin-bottom: $unit-4;
+   }
 
-    &-para {
-        margin-top: $unit-3;
-        padding: $unit-2;
-    }
+   &-para {
+      margin-top: $unit-3;
+      padding: $unit-2;
+   }
 }
 
 // Product card
 .product {
-    position: relative;
-    padding: $unit-3;
-    border-radius: $unit-3;
+   position: relative;
+   padding: $unit-3;
+   border: none;
+   border-radius: $unit-3;
 
-    &:hover {
-        transition: all 300ms ease-in-out;
-        box-shadow: rgba($color: $shadow-color, $alpha: 0.2) 0px 8px 10px;
-    }
+   &:hover {
+      transition: all 300ms ease-in-out;
+      box-shadow: rgba($color: $shadow-color, $alpha: 0.2) 0px 8px 10px;
+   }
 
-    .card-img {
-        margin: 0;
-    }
+   .card-img {
+      margin: 0;
+   }
 
-    &-details {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: $unit-2;
-    }
+   &-details {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: $unit-2;
+   }
 
-    #product-title {
-        font-size: $unit-4;
-        color: $dark-color;
-    }
+   #product-title {
+      font-size: $unit-4;
+      color: $dark-color;
+   }
 
-    &-price {
-        .new-price {
-            font-weight: 700;
-        }
-        .old-price {
-            color: $gray-color-dark;
-            font-size: $unit-3;
-            font-weight: 600;
-            text-decoration: line-through;
-        }
-    }
+   &-price {
+      .new-price {
+         font-weight: 700;
+      }
+      .old-price {
+         color: $gray-color-dark;
+         font-size: $unit-3;
+         font-weight: 600;
+         text-decoration: line-through;
+      }
+   }
 
-    .btn-top-right {
-        top: 10px;
-        right: 10px;
-    }
+   .btn-top-right {
+      top: 10px;
+      right: 10px;
+   }
 
-    .btn-cart {
-        margin: 0;
-        font-weight: 600;
-        &:hover {
-            background-color: $primary-color-light;
-        }
-    }
+   .btn-cart {
+      margin: 0;
+      font-weight: 600;
+      &:hover {
+         background-color: $primary-color-light;
+      }
+   }
 }
 
 // Text Overlay
 .card-overlay {
-    border-radius: $unit-3;
+   border-radius: $unit-3;
 
-    .overlay-img {
-        filter: brightness(0.6);
-        transition: transform 0.2s;
+   .overlay-img {
+      filter: brightness(0.6);
+      transition: transform 0.2s;
 
-        &:hover {
-            transform: scale(1.04);
-        }
-    }
+      &:hover {
+         transform: scale(1.04);
+      }
+   }
 
-    .overlay-text {
-        padding: $unit-4;
-        position: absolute;
-        top: $unit-16;
-    }
+   .overlay-text {
+      padding: $unit-4;
+      position: absolute;
+      top: $unit-16;
+   }
 
-    .overlay-heading {
-        color: $light-color;
-    }
+   .overlay-heading {
+      color: $light-color;
+   }
 
-    .card-content {
-        color: $gray-color;
-        padding: $unit-1;
-        font-size: $unit-4;
-    }
+   .card-content {
+      color: $gray-color;
+      padding: $unit-1;
+      font-size: $unit-4;
+   }
 
-    .overlay-details {
-        display: flex;
-        position: absolute;
-        width: 90%;
-        justify-content: space-between;
-        padding: $unit-4;
-        bottom: 6%;
-    }
+   .overlay-details {
+      display: flex;
+      position: absolute;
+      width: 90%;
+      justify-content: space-between;
+      padding: $unit-4;
+      bottom: 6%;
+   }
 
-    .product-price {
-        margin-top: $unit-5;
-        color: $light-color;
-        font-size: $unit-5;
+   .product-price {
+      margin-top: $unit-5;
+      color: $light-color;
+      font-size: $unit-5;
 
-        .old-price {
-            color: $gray-color-light;
-        }
-    }
+      .old-price {
+         color: $gray-color-light;
+      }
+   }
 
-    .product-rating {
-        color: $light-color;
-    }
+   .product-rating {
+      color: $light-color;
+   }
 }
 
 @media (min-width: $size-sm) {
-    .card {
-        width: 60%;
-    }
+   .card {
+      width: 60%;
+   }
 }
 
 @media (min-width: $size-tab) {
-    .cards {
-        justify-content: center;
-        flex-direction: row;
-    }
-    .card {
-        width: 45%;
-        margin: 0 auto;
-        margin: $unit-2;
-        margin-top: $unit-6;
-    }
-    .card-overlay .overlay-details {
-        bottom: 10%;
-    }
+   .cards {
+      justify-content: center;
+      flex-direction: row;
+   }
+   .card {
+      width: 45%;
+      margin: 0 auto;
+      margin: $unit-2;
+      margin-top: $unit-6;
+   }
+   .card-overlay .overlay-details {
+      bottom: 10%;
+   }
 }
 
 @media (min-width: $size-lg) {
-    .cards {
-        justify-content: center;
-        flex-direction: row;
-    }
+   .cards {
+      justify-content: center;
+      flex-direction: row;
+   }
 
-    .card {
-        width: 45%;
-        margin: $unit-2;
-        margin-top: $unit-6;
-    }
+   .card {
+      width: 45%;
+      margin: $unit-2;
+      margin-top: $unit-6;
+   }
 }
