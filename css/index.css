@@ -51,6 +51,7 @@ ul {
   flex-direction: column;
 }
 .hero-title {
+  font-size: 2em;
   text-align: center;
   color: #2553e3;
 }
