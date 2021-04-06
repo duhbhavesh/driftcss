@@ -106,6 +106,21 @@
    margin-top: $unit-5;
 }
 
+.code-typo {
+   background: $gray-color;
+   border-radius: $border-radius;
+   font-size: 86%;
+   margin: 0 0.2rem;
+   padding: 0.2rem 0.5rem;
+   white-space: nowrap;
+}
+
+#heading-size {
+   color: #999;
+   font-size: $unit-3;
+   letter-spacing: normal;
+}
+
 @media (min-width: $size-lg) {
    .sidebar {
       position: fixed;

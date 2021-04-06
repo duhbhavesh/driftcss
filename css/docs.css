@@ -100,6 +100,21 @@
   margin-top: 1rem;
 }
 
+.code-typo {
+  background: #f1f2f6;
+  border-radius: 0.2rem;
+  font-size: 86%;
+  margin: 0 0.2rem;
+  padding: 0.2rem 0.5rem;
+  white-space: nowrap;
+}
+
+#heading-size {
+  color: #999;
+  font-size: 0.6rem;
+  letter-spacing: normal;
+}
+
 @media (min-width: 960px) {
   .sidebar {
     position: fixed;
