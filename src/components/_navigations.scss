@@ -26,6 +26,7 @@
 
    .nav-item-link {
       cursor: pointer;
+      color: $light-color;
    }
 
    &-link {
@@ -38,6 +39,7 @@
 
    &-sm {
       display: block;
+      background-color: $primary-color-light;
       padding: $unit-3;
    }
 
@@ -46,7 +48,9 @@
    }
 }
 
-.btn-bars {
+.btn-bars,
+.btn-close {
+   background-color: $primary-color-light;
    border: none;
    padding: $unit-1;
 
@@ -55,8 +59,16 @@
    }
 }
 
+.btn-close {
+   color: $light-color;
+}
+
 .btn-search {
-   padding: 0.5rem $unit-5;
+   border: 1px solid $light-color;
+   border-radius: 0;
+   border-bottom-right-radius: $unit-1;
+   border-top-right-radius: $unit-1;
+   height: $unit-10;
    margin: 0;
 }
 
@@ -76,8 +88,11 @@
    display: flex;
    max-width: 100%;
 }
-
 .form-control {
+   border-style: none;
+   border-radius: 0;
+   border-bottom-left-radius: $unit-1;
+   border-top-left-radius: $unit-1;
    width: 100%;
 }
 
@@ -93,7 +108,6 @@
    width: 60%;
    z-index: 5001;
    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-   padding: $unit-5;
 
    .btn {
       border: none;
@@ -102,23 +116,23 @@
    }
 
    .sidebar-header {
-      background: $light-color;
+      background: $primary-color-light;
       border-bottom: 1px solid $divider;
-      padding-bottom: $unit-8;
-      padding-top: $unit-4;
+      padding: $unit-5;
    }
 
    .sidebar-links {
       list-style: none;
-      padding: $unit-5 0;
+      padding: $unit-5;
       border-bottom: 1px solid $divider;
       margin-bottom: $unit-8;
    }
 
    ul li a {
+      display: block;
       padding: $unit-2 0;
       font-size: $unit-4;
-      display: block;
+      color: $dark-color;
    }
 
    ul li a:hover {
@@ -154,15 +168,16 @@
    z-index: 5000;
 }
 
+.sidebar-link {
+   margin-left: $unit-3;
+}
+
 @media (min-width: $size-sm) {
    .navbar-nav {
       flex-direction: row;
    }
    .fas {
       font-size: $unit-6;
-   }
-   .btn-search {
-      padding: $unit-2 $unit-5;
    }
 }
 
@@ -177,6 +192,8 @@
 
    .navbar-md {
       display: flex;
+      background-color: $primary-color-light;
+      padding: $unit-3;
    }
 
    .form-inline {
