@@ -959,7 +959,7 @@
                text.
             </p>
             <div class="navbars">
-               <nav class="navbar">
+               <nav class="navbar navbar-nav">
                   <a class="navbar-brand navbar-link" href="#">Brand</a>
                   <div class="navbar-nav">
                      <a class="nav-item navbar-link" href="#">Home</a>
@@ -973,7 +973,7 @@
                      >
                   </div>
                </nav>
-               <nav class="navbar">
+               <nav class="navbar navbar-nav">
                   <a class="navbar-brand navbar-link" href="#">Brand</a>
                   <div class="navbar-nav">
                      <a class="nav-item navbar-link" href="#">Home</a>
@@ -989,6 +989,155 @@
                         >Contact</a
                      >
                   </div>
+               </nav>
+
+               <div class="container-nav">
+                  <nav class="navbar navbar-md">
+                     <a class="navbar-brand navbar-link" href="#"> Brand </a>
+                     <ul class="nav-items">
+                        <li class="nav-item navbar-link">
+                           <a href="#" class="nav-item-link">Products</a>
+                        </li>
+                        <li class="nav-item navbar-link">
+                           <a href="#" class="nav-item-link">Sale</a>
+                        </li>
+                        <li class="nav-item navbar-link">
+                           <a href="#" class="nav-item-link">Offers</a>
+                        </li>
+                     </ul>
+                     <form class="form-inline">
+                        <input
+                           class="input-box form-control"
+                           type="search"
+                           placeholder="Search for products..."
+                           aria-label="Search"
+                        />
+                        <button class="btn btn-search" type="submit">
+                           <i class="fas fa-search"></i>
+                        </button>
+                     </form>
+                     <ul class="nav-items">
+                        <li class="nav-item navbar-link">
+                           <a class="nav-item-link"
+                              ><i class="fas fa-heart"></i
+                           ></a>
+                        </li>
+                        <li class="nav-item navbar-link">
+                           <a class="nav-item-link"
+                              ><i class="fas fa-shopping-cart"></i
+                           ></a>
+                        </li>
+                        <li class="nav-item navbar-link">
+                           <a class="nav-item-link"
+                              ><i class="fas fa-user"></i
+                           ></a>
+                        </li>
+                     </ul>
+                  </nav>
+
+                  <nav class="navbar-sm">
+                     <div class="navbar">
+                        <ul class="nav-items">
+                           <li class="nav-item navbar-link">
+                              <button
+                                 class="btn btn-link btn-bars"
+                                 id="sidebarCollapse"
+                              >
+                                 <i class="fas fa-bars"></i>
+                              </button>
+                           </li>
+                           <li class="nav-item navbar-link">
+                              <a class="navbar-brand" href="#"> Brand </a>
+                           </li>
+                        </ul>
+                        <ul class="nav-items">
+                           <li class="nav-item navbar-link">
+                              <a class="nav-item-link"
+                                 ><i class="fas fa-heart"></i
+                              ></a>
+                           </li>
+                           <li class="nav-item navbar-link">
+                              <a class="nav-item-link"
+                                 ><i class="fas fa-shopping-cart"></i
+                              ></a>
+                           </li>
+                           <li class="nav-item navbar-link">
+                              <a class="nav-item-link"
+                                 ><i class="fas fa-user"></i
+                              ></a>
+                           </li>
+                        </ul>
+                     </div>
+                     <form class="form-inline">
+                        <input
+                           class="input-box form-control"
+                           type="search"
+                           placeholder="Search for products..."
+                           aria-label="Search"
+                        />
+                        <button class="btn btn-search" type="submit">
+                           <i class="fas fa-search"></i>
+                        </button>
+                     </form>
+                  </nav>
+               </div>
+
+               <div class="sidebar-overlay"></div>
+               <nav id="sidebar">
+                  <div class="sidebar-header">
+                     <div class="container-sidebar">
+                        <div class="sidebar-top">
+                           <div class="sidebar-login">
+                              <a class="btn btn-primary" href="#"
+                                 ><i
+                                    class="fas fas-sidebar fas-sidebar-user fa-user"
+                                 ></i>
+                                 Log In</a
+                              >
+                           </div>
+
+                           <div class="sidebar-close">
+                              <button
+                                 type="button"
+                                 id="sidebarCollapseX"
+                                 class="btn btn-link"
+                              >
+                                 <i class="fas fa-times"></i>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <ul class="sidebar-links">
+                     <li>
+                        <a href="#" class="nav-item-link"
+                           ><i class="fas fas-sidebar fa-list"></i> Products</a
+                        >
+                     </li>
+                     <li>
+                        <a href="#" class="nav-item-link"
+                           ><i class="fas fas-sidebar fa-shopping-bag"></i>
+                           Sale</a
+                        >
+                     </li>
+                     <li>
+                        <a href="#" class="nav-item-link"
+                           ><i class="fas fas-sidebar fa-receipt"></i> Offers</a
+                        >
+                     </li>
+                     <li>
+                        <a href="#" class="nav-item-link"
+                           ><i class="fas fas-sidebar fa-question"></i>
+                           Support</a
+                        >
+                     </li>
+                     <li>
+                        <a href="#" class="nav-item-link"
+                           ><i class="fas fas-sidebar fa-phone"></i> Contact</a
+                        >
+                     </li>
+                  </ul>
                </nav>
             </div>
             <div class="code-toolbar">
@@ -1225,38 +1374,41 @@
          </section>
          <section class="section-doc" id="typography">
             <h3 class="component-title">Typography</h3>
-            <p class="component-details">
-            </p>
+            <p class="component-details"></p>
             <div class="row">
                <div class="column">
-                 <h1>
-                   Heading<span id="heading-size">
-                     <code class="code-typo">&lt;h1&gt;</code> 2rem</span
-                   >
-                 </h1>
-                 <h2>
-                   Heading<span id="heading-size">
-                     <code class="code-typo">&lt;h2&gt;</code> 1.8rem</span
-                   >
-                 </h2>
-                 <h3>
-                   Heading<span id="heading-size">
-                     <code class="code-typo">&lt;h3&gt;</code> 1.6rem</span
-                   >
-                 </h3>
-                 <h4>
-                   Heading<span id="heading-size">
-                     <code class="code-typo">&lt;h4&gt;</code> 1.4rem</span
-                   >
-                 </h4>
-                 <h5>
-                   Heading<span id="heading-size">
-                     <code class="code-typo">&lt;h5&gt;</code> 1.2rem</span
-                   >
-                 </h5>
-                 <h6>
-                   Heading<span id="heading-size">
-                     <code class="code-typo">&lt;h6&gt;</code> 1rem 
+                  <h1>
+                     Heading<span id="heading-size">
+                        <code class="code-typo">&lt;h1&gt;</code> 2rem</span
+                     >
+                  </h1>
+                  <h2>
+                     Heading<span id="heading-size">
+                        <code class="code-typo">&lt;h2&gt;</code> 1.8rem</span
+                     >
+                  </h2>
+                  <h3>
+                     Heading<span id="heading-size">
+                        <code class="code-typo">&lt;h3&gt;</code> 1.6rem</span
+                     >
+                  </h3>
+                  <h4>
+                     Heading<span id="heading-size">
+                        <code class="code-typo">&lt;h4&gt;</code> 1.4rem</span
+                     >
+                  </h4>
+                  <h5>
+                     Heading<span id="heading-size">
+                        <code class="code-typo">&lt;h5&gt;</code> 1.2rem</span
+                     >
+                  </h5>
+                  <h6>
+                     Heading<span id="heading-size">
+                        <code class="code-typo">&lt;h6&gt;</code> 1rem
+                     </span>
+                  </h6>
+               </div>
+            </div>
          </section>
       </main>
       <script>
@@ -1287,6 +1439,25 @@
             modal.classList.remove('open');
             overlay.classList.remove('open');
          }
+
+         // nav
+         const sidebarOpen = document.querySelector('#sidebarCollapse');
+         const sidebarClose = document.querySelector('#sidebarCollapseX');
+         const sidebar = document.querySelector('#sidebar');
+         const overlayNav = document.querySelector('.sidebar-overlay');
+
+         sidebarOpen.addEventListener('click', () => {
+            sidebar.classList.add('active');
+            overlayNav.classList.add('active');
+         });
+
+         function closeSidebar() {
+            sidebar.classList.remove('active');
+            overlayNav.classList.remove('active');
+         }
+
+         sidebarClose.addEventListener('click', closeSidebar);
+         overlayNav.addEventListener('click', closeSidebar);
 
          // toast
          const toast = document.querySelector('#toast-demo');

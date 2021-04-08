@@ -32,6 +32,7 @@ $link-color-light: lighten($link-color, 10%) !default;
 $shadow-color: #959da5 !default;
 $note: #ffe564 !default;
 $note-bg: rgba(253, 255, 121, 0.4);
+$divider: #e4e4e4;
 
 // Control colors
 $success-color: #0be881 !default;
@@ -42,9 +43,9 @@ $bg-color-error: #fcf9f7 !default;
 
 // Fonts
 $base-font-family: -apple-system, system-ui, BlinkMacSystemFont, 'Segoe UI',
-    Roboto !default;
+   Roboto !default;
 $mono-font-family: 'SF Mono', 'Segoe UI Mono', 'Roboto Mono', Menlo, Courier,
-    monospace !default;
+   monospace !default;
 $fallback-font-family: 'Helvetica Neue', sans-serif !default;
 $body-font-family: $base-font-family, $fallback-font-family !default;
 
