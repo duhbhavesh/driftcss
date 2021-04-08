@@ -1162,7 +1162,8 @@ img {
   margin-bottom: 1.6rem;
 }
 .sidebar-nav ul li a {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 0.4rem 0;
   font-size: 0.8rem;
   color: #4a526b;
