@@ -1087,7 +1087,7 @@
                </div>
 
                <div class="sidebar-overlay"></div>
-               <nav id="sidebar">
+               <nav class="sidebar-nav">
                   <div class="sidebar-header">
                      <div class="container-sidebar">
                         <div class="sidebar-top">
@@ -1450,7 +1450,7 @@
          // nav
          const sidebarOpen = document.querySelector('#sidebarCollapse');
          const sidebarClose = document.querySelector('#sidebarCollapseX');
-         const sidebar = document.querySelector('#sidebar');
+         const sidebar = document.querySelector('.sidebar-nav');
          const overlayNav = document.querySelector('.sidebar-overlay');
 
          sidebarOpen.addEventListener('click', () => {

@@ -96,7 +96,7 @@
    width: 100%;
 }
 
-#sidebar {
+.sidebar-nav {
    background: #fff;
    height: 100%;
    left: -100%;
@@ -146,7 +146,7 @@
    }
 }
 
-#sidebar.active {
+.sidebar-nav.active {
    left: 0;
 }
 
