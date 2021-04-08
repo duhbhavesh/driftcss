@@ -129,7 +129,8 @@
    }
 
    ul li a {
-      display: block;
+      display: flex;
+      align-items: center;
       padding: $unit-2 0;
       font-size: $unit-4;
       color: $dark-color;
