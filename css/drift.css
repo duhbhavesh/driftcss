@@ -1066,6 +1066,7 @@ img {
 }
 .navbar .nav-item-link {
   cursor: pointer;
+  color: #fff;
 }
 .navbar-link {
   font-weight: 600;
@@ -1075,22 +1076,34 @@ img {
 }
 .navbar-sm {
   display: block;
+  background-color: #4068e6;
   padding: 0.6rem;
 }
 .navbar-md {
   display: none;
 }
 
-.btn-bars {
+.btn-bars,
+.btn-close {
+  background-color: #4068e6;
   border: none;
   padding: 0.2rem;
 }
-.btn-bars:focus {
+.btn-bars:focus,
+.btn-close:focus {
   border: none;
 }
 
+.btn-close {
+  color: #fff;
+}
+
 .btn-search {
-  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 0;
+  border-bottom-right-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
+  height: 2rem;
   margin: 0;
 }
 
@@ -1112,6 +1125,10 @@ img {
 }
 
 .form-control {
+  border-style: none;
+  border-radius: 0;
+  border-bottom-left-radius: 0.2rem;
+  border-top-left-radius: 0.2rem;
   width: 100%;
 }
 
@@ -1127,7 +1144,6 @@ img {
   width: 60%;
   z-index: 5001;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-  padding: 1rem;
 }
 #sidebar .btn {
   border: none;
@@ -1135,21 +1151,21 @@ img {
   margin: 0;
 }
 #sidebar .sidebar-header {
-  background: #fff;
+  background: #4068e6;
   border-bottom: 1px solid #e4e4e4;
-  padding-bottom: 1.6rem;
-  padding-top: 0.8rem;
+  padding: 1rem;
 }
 #sidebar .sidebar-links {
   list-style: none;
-  padding: 1rem 0;
+  padding: 1rem;
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 1.6rem;
 }
 #sidebar ul li a {
+  display: block;
   padding: 0.4rem 0;
   font-size: 0.8rem;
-  display: block;
+  color: #4a526b;
 }
 #sidebar ul li a:hover {
   color: #4068e6;
@@ -1182,6 +1198,10 @@ img {
   z-index: 5000;
 }
 
+.sidebar-link {
+  margin-left: 0.6rem;
+}
+
 @media (min-width: 600px) {
   .navbar-nav {
     flex-direction: row;
@@ -1189,10 +1209,6 @@ img {
 
   .fas {
     font-size: 1.2rem;
-  }
-
-  .btn-search {
-    padding: 0.4rem 1rem;
   }
 }
 @media (min-width: 840px) {
@@ -1206,6 +1222,8 @@ img {
 
   .navbar-md {
     display: flex;
+    background-color: #4068e6;
+    padding: 0.6rem;
   }
 
   .form-inline {
