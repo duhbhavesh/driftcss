@@ -1,41 +1,59 @@
 .badges,
 .badges-pill {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: $unit-5;
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: $unit-5;
 }
 
 .badge {
-    font-size: $unit-3;
-    margin: 0 $unit-2 $unit-2 $unit-2;
-    padding: $unit-1 $unit-4;
-    border: 1px solid $border-color-dark;
-    border-radius: $border-radius;
-    background-color: $gray-color-light;
-    color: $light-color;
-    font-weight: 600;
+   font-size: $unit-3;
+   margin: 0 $unit-2 $unit-2 $unit-2;
+   padding: $unit-1 $unit-4;
+   border: 1px solid $border-color-dark;
+   border-radius: $border-radius;
+   background-color: $gray-color-light;
+   color: $light-color;
+   font-weight: 600;
 
-    &-default {
-        color: $dark-color;
-    }
+   &-default {
+      color: $dark-color;
+   }
 
-    &-primary {
-        background-color: $primary-color;
-    }
+   &-primary {
+      background-color: $primary-color;
+   }
 
-    &-success {
-        background-color: $success-color;
-    }
+   &-success {
+      background-color: $success-color;
+   }
 
-    &-secondary {
-        background-color: $warning-color;
-    }
+   &-secondary {
+      background-color: $warning-color;
+   }
 
-    &-error {
-        background-color: $error-color;
-    }
+   &-error {
+      background-color: $error-color;
+   }
 
-    &-pill {
-        border-radius: $unit-10;
-    }
+   &-pill {
+      border-radius: $unit-10;
+   }
+
+   &-top {
+      position: absolute;
+      padding: 0;
+      margin: 0;
+      border-radius: 50%;
+      text-align: center;
+      right: -$unit-3;
+      top: -$unit-3;
+      z-index: 1;
+      width: $unit-5;
+      height: $unit-5;
+      letter-spacing: 0;
+      font-weight: 400;
+      font-size: $unit-3;
+      line-height: $unit-4;
+      opacity: 1;
+   }
 }
