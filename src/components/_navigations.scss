@@ -25,6 +25,7 @@
    }
 
    .nav-item-link {
+      position: relative;
       cursor: pointer;
       color: $light-color;
    }
@@ -73,6 +74,7 @@
 }
 
 .fas {
+   position: relative;
    font-size: $unit-4;
 }
 
