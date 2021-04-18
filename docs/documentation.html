@@ -8,8 +8,9 @@
       <link rel="stylesheet" href="/css/drift.css" />
       <link rel="stylesheet" href="/css/index.css" />
       <link rel="stylesheet" href="/css/docs.css" />
-      <link rel="stylesheet" href="/prism.css" />
-      <script defer src="/prism.js"></script>
+      <link rel="stylesheet" href="/plugins//prism.css" />
+      <script defer src="/plugins/prism.js"></script>
+      <script defer src="./js//documentation.js"></script>
       <script
          defer
          src="https://kit.fontawesome.com/05f7314c5e.js"
@@ -156,7 +157,7 @@
             <div class="code-toolbar">
                <pre id="code" class="code">
 						<code class="lang-html">
-&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/duhbhavesh/driftcss@master/css/minified/drift.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/duhbhavesh/driftcss@main/css/minified/drift.min.css&quot;&gt;
 						</code>
 					</pre>
             </div>
@@ -244,6 +245,7 @@
             <ul class="avatars-default">
                <li class="avatar-item">
                   <img
+                     loading="lazy"
                      class="avatar avatar-1"
                      src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-1.png"
                      alt=""
@@ -251,6 +253,7 @@
                </li>
                <li class="avatar-item">
                   <img
+                     loading="lazy"
                      class="avatar avatar-2"
                      src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-2.png"
                      alt=""
@@ -258,6 +261,7 @@
                </li>
                <li class="avatar-item">
                   <img
+                     loading="lazy"
                      class="avatar avatar-3"
                      src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-3.png"
                      alt=""
@@ -265,6 +269,7 @@
                </li>
                <li class="avatar-item">
                   <img
+                     loading="lazy"
                      class="avatar avatar-4"
                      src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615884024/driftcss/static/avatar-4.png"
                      alt=""
@@ -533,6 +538,7 @@
             <div class="cards">
                <div class="card card-badge">
                   <img
+                     loading="lazy"
                      class="card-img"
                      src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615908702/driftcss/static/card-1.jpg"
                      alt=""
@@ -548,6 +554,7 @@
                </div>
                <div class="card card-dismiss">
                   <img
+                     loading="lazy"
                      class="card-img"
                      src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615911023/driftcss/static/card-3.jpg"
                      alt=""
@@ -575,7 +582,12 @@
                      <i class="far fa-heart"></i>
                   </button>
                   <div class="product-image">
-                     <img class="card-img" src="/static/hoodie.jfif" alt="" />
+                     <img
+                        loading="lazy"
+                        class="card-img"
+                        src="/static/hoodie.jfif"
+                        alt=""
+                     />
                   </div>
                   <div class="product-details">
                      <h3 class="product-heading">
@@ -604,6 +616,7 @@
                </div>
                <div class="card card-overlay">
                   <img
+                     loading="lazy"
                      class="card-img overlay-img"
                      src="https://res.cloudinary.com/duhbhavesh/image/upload/v1616150651/driftcss/static/card-img-4.jpg"
                      alt=""
@@ -720,6 +733,7 @@
                <h4 class="component-title">&#9900; Image Responsive</h4>
                <div class="images-responsive">
                   <img
+                     loading="lazy"
                      class="img-responsive"
                      src="https://res.cloudinary.com/duhbhavesh/image/upload/v1615908702/driftcss/static/card-1.jpg"
                      alt="Mountain Image"
@@ -731,11 +745,13 @@
 
                <div class="images-round-thumbnail">
                   <img
+                     loading="lazy"
                      class="img-responsive img-rounded"
                      src="/static/card-img-5.jpg"
                      alt="Mountain Image"
                   />
                   <img
+                     loading="lazy"
                      class="img-responsive img-thumbnail"
                      src="/static/card-img-5.jpg"
                      alt="Mountain Image"
@@ -1426,67 +1442,5 @@
             </div>
          </section>
       </main>
-      <script>
-         // window scroll top
-         const scrollToTop = () => {
-            window.scrollTo(0, 0);
-         };
-
-         // modal
-         const modal = document.querySelector('#modal');
-         const openModalButton = document.querySelector('#open-modal-btn');
-         const closeModalButton = document.querySelector('#close-modal-btn');
-         const closeModalButtonIcon = document.querySelector(
-            '#close-modal-btn-icon',
-         );
-         const overlay = document.querySelector('#modal-overlay');
-
-         openModalButton.addEventListener('click', () => {
-            modal.classList.add('open');
-            overlay.classList.add('open');
-         });
-
-         closeModalButton.addEventListener('click', closeModal);
-         closeModalButtonIcon.addEventListener('click', closeModal);
-         overlay.addEventListener('click', closeModal);
-
-         function closeModal() {
-            modal.classList.remove('open');
-            overlay.classList.remove('open');
-         }
-
-         // nav
-         const sidebarOpen = document.querySelector('#sidebarCollapse');
-         const sidebarClose = document.querySelector('#sidebarCollapseX');
-         const sidebar = document.querySelector('.sidebar-nav');
-         const overlayNav = document.querySelector('.sidebar-overlay');
-
-         sidebarOpen.addEventListener('click', () => {
-            sidebar.classList.add('active');
-            overlayNav.classList.add('active');
-         });
-
-         function closeSidebar() {
-            sidebar.classList.remove('active');
-            overlayNav.classList.remove('active');
-         }
-
-         sidebarClose.addEventListener('click', closeSidebar);
-         overlayNav.addEventListener('click', closeSidebar);
-
-         // toast
-         const toast = document.querySelector('#toast-demo');
-         const openToastBtn = document.querySelector('#toast-demo-open');
-         const closeToastBtn = document.querySelector('#toast-demo-close');
-
-         openToastBtn.addEventListener('click', () => {
-            toast.classList.add('open');
-         });
-         closeToastBtn.addEventListener('click', closeToast);
-
-         function closeToast() {
-            toast.classList.remove('open');
-         }
-      </script>
    </body>
 </html>
