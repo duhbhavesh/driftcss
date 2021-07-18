@@ -181,6 +181,20 @@ ul {
          width: 30%;
       }
 
+      &-brand {
+         display: flex;
+         align-items: center;
+      }
+
+      &-logo {
+         width: 30px;
+         height: 30px;
+      }
+
+      &-brand-title {
+         margin-left: 0.2rem;
+      }
+
       .nav-right,
       .social-icons {
          display: flex;
