@@ -135,6 +135,17 @@ ul {
   .nav-left {
     width: 30%;
   }
+  .nav-brand {
+    display: flex;
+    align-items: center;
+  }
+  .nav-logo {
+    width: 30px;
+    height: 30px;
+  }
+  .nav-brand-title {
+    margin-left: 0.2rem;
+  }
   .nav .nav-right,
 .nav .social-icons {
     display: flex;
