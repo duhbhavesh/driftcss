@@ -39,10 +39,28 @@ ul {
       margin-top: $unit-4;
       margin-bottom: $unit-4;
       justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+   }
+
+   &-links-logo {
+      display: flex;
+      flex-direction: column;
    }
 
    &-link {
       font-weight: 700;
+   }
+
+   &-logo {
+      height: 40px;
+      width: 40px;
+   }
+
+   &-brand-title {
+      margin-left: 0.2rem;
+      display: flex;
+      align-items: center;
    }
 }
 
@@ -193,6 +211,8 @@ ul {
 
       &-brand-title {
          margin-left: 0.2rem;
+         display: flex;
+         align-items: center;
       }
 
       .nav-right,
