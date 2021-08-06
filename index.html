@@ -28,17 +28,42 @@
                         <a href="/docs/documentation.html">Docs</a>
                      </li>
                      <li class="nav-link">
-                        <a href="/docs/documentation.html">Download</a>
+                        <a
+                           style="cursor: pointer"
+                           onclick="window.open('https://github.com/duhbhavesh/driftcss/releases/download/1.0.0/drift.min.css')"
+                        >
+                           Download
+                        </a>
                      </li>
                   </ul>
                </div>
                <div class="nav-right">
-                  <form action="/" id="docsearch">
+                  <form id="docsearch">
                      <input
                         id="docsearch-input"
                         placeholder="Seach Docs..."
                         type="search"
+                        list="search"
+                        onkeyup="window.location='/docs/documentation.html#' + this.value"
                      />
+
+                     <datalist id="search">
+                        <option value="installation"></option>
+                        <option value="alerts"></option>
+                        <option value="avatars"></option>
+                        <option value="badges"></option>
+                        <option value="buttons"></option>
+                        <option value="cards"></option>
+                        <option value="images"></option>
+                        <option value="inputs"></option>
+                        <option value="lists"></option>
+                        <option value="modals"></option>
+                        <option value="navigation"></option>
+                        <option value="rating"></option>
+                        <option value="grids"></option>
+                        <option value="toast"></option>
+                        <option value="typography"></option>
+                     </datalist>
                   </form>
                   <ul class="nav-links social-icons hide">
                      <li class="nav-link">

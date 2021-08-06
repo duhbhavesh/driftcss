@@ -45,7 +45,6 @@ ul {
   border-radius: 0.2rem;
   padding: 0.4rem;
   padding-left: 0.8rem;
-  padding-right: 2rem;
   background-color: #f1f2f6;
 }
 
@@ -205,6 +204,18 @@ ul {
 @media (min-width: 960px) {
   .nav-left {
     width: 20%;
+  }
+
+  .nav-right {
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  #docsearch {
+    width: 85%;
+  }
+  #docsearch-input {
+    width: 85%;
   }
 
   .hero {
