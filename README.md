@@ -25,7 +25,7 @@ Use the following CDN link to include driftcss in your project.
 ```
 
 ## Example usage
-After including the stylesheet as indicated in the ```Getting Started```:
+After including the stylesheet as indicated in the ```Getting Started``` :
 
 ```html
  <nav class="navbar">
